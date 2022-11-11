@@ -161,7 +161,7 @@ def delete_deck(deck_id):
     message = {}
 
     try:
-        conn = connection
+        conn = connection()
         conn.execute("DELETE from deck WHERE deck_id = ?", (deck_id,))
 
         conn.commit()
@@ -260,7 +260,7 @@ def delete_user(user_id):
     message = {}
 
     try:
-        conn = connection
+        conn = connection()
         conn.execute("DELETE from user WHERE user_id = ?", (user_id,))
 
         conn.commit()
@@ -361,7 +361,7 @@ def delete_side(side_id):
     message = {}
 
     try:
-        conn = connection
+        conn = connection()
         conn.execute("DELETE from side WHERE side_id = ?", (side_id,))
 
         conn.commit()
@@ -374,6 +374,41 @@ def delete_side(side_id):
         conn.close()
 
     return message
+
+
+
+#-------------Complex-------------#
+def categories_to_deck(categories_list, deck_id):
+	message = {}
+
+	try:
+		conn = connection()
+		# find cards from each category
+		cards = []
+		for category in categories_list:
+			conn.execute("""
+				SELECT card_category.card_id
+				FROM categories
+					INNER JOIN card_category ON categories.category_id = card_category.category_id
+				WHERE categories.c_name LIKE "%?%"
+			""", category)
+			cards += conn.fetchall()
+		# insert into the deck
+		for card in cards:
+			conn.execute("INSERT INTO card_in_deck VALUES (?)", (deck_id, card["card_id"]))
+
+	except:
+		conn.rollback()
+		message['status'] = "Making deck from provided categories failed"
+
+	finally:
+		conn.close()
+
+	return message
+
+
+
+
 
 #-------------DECKS-------------#
 @app.route('/api/decks', methods=['GET'])
