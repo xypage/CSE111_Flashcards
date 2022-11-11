@@ -71,7 +71,7 @@ def make_copies(path, n):
 def rand(start, stop):
 	return random.randrange(start, stop)
 
-num_copies = 100
+num_copies = 1000
 # Make new sides
 new_sides = make_copies("sides.tsv", int(num_copies * 2))
 # print(new_sides)

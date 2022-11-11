@@ -21,203 +21,2003 @@ side_id	s_header	s_body	img_path
 20	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
 21	What is C in e=mc^2?		
 22	The speed of light.	More specifically, 299,792,458 m/s	
-23	What is the search time in a Red-Black tree?		
-24	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
-25	What does CAP stand for in CAP theorem? 		
-26	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
-27	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
-28	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
-29	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
-30	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
-31	What is the search time in a finger table used by Chord?		
-32	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
-33	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
-34	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
-35	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
-36	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
-37	Who discovered penicillin?		
-38	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
-39	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
-40	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
-41	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
-42	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+23	What is C in e=mc^2?		
+24	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+25	What is C in e=mc^2?		
+26	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+27	What is the search time in a Red-Black tree?		
+28	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+29	What is the search time in a Red-Black tree?		
+30	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+31	What is the search time in a Red-Black tree?		
+32	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+33	What is C in e=mc^2?		
+34	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+35	What is the search time in a finger table used by Chord?		
+36	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+37	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+38	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+39	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+40	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+41	How many children can a node in a binary tree have?		
+42	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
 43	What is the search time in a Red-Black tree?		
-44	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
-45	What is 0b1100 in decimal?		
-46	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
-47	How many children can a node in a binary tree have?		
+44	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+45	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+46	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+47	What is the search time in a finger table used by Chord?		
 48	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
-49	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
-50	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
-51	When was C created, and by who?		
+49	What is the search time in a Red-Black tree?		
+50	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+51	What is 0b1100 in decimal?		
 52	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
-53	What is the search time in a finger table used by Chord?		
-54	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
-55	Who discovered penicillin?		
-56	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
-57	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+53	How many children can a node in a binary tree have?		
+54	The speed of light.	More specifically, 299,792,458 m/s	
+55	What is the search time in a Red-Black tree?		
+56	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+57	Who discovered penicillin?		
 58	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
-59	Who discovered penicillin?		
-60	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
-61	What is C in e=mc^2?		
-62	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
-63	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
-64	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
-65	What is 0b1100 in decimal?		
-66	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
-67	What does CAP stand for in CAP theorem? 		
-68	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
-69	What is the search time in a finger table used by Chord?		
-70	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
-71	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
-72	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
-73	What is the search time in a Red-Black tree?		
-74	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
-75	What is the search time in a Red-Black tree?		
-76	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+59	When was C created, and by who?		
+60	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+61	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+62	2 A node can also have 0 or 1, but 2 is the max		
+63	When was C created, and by who?		
+64	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+65	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+66	2 A node can also have 0 or 1, but 2 is the max		
+67	What is the search time in a Red-Black tree?		
+68	The speed of light.	More specifically, 299,792,458 m/s	
+69	How many children can a node in a binary tree have?		
+70	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+71	What is 0b1100 in decimal?		
+72	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+73	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+74	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+75	When was C created, and by who?		
+76	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
 77	Who discovered penicillin?		
-78	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
-79	Who discovered penicillin?		
+78	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+79	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
 80	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
-81	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+81	Who discovered penicillin?		
 82	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
-83	What is the search time in a finger table used by Chord?		
-84	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
-85	What is C in e=mc^2?		
-86	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
-87	How many children can a node in a binary tree have?		
-88	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
-89	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
-90	The speed of light.	More specifically, 299,792,458 m/s	
-91	What is 0b1100 in decimal?		
-92	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
-93	What is the search time in a Red-Black tree?		
-94	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+83	What does CAP stand for in CAP theorem? 		
+84	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+85	What is the search time in a Red-Black tree?		
+86	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+87	What is the search time in a finger table used by Chord?		
+88	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+89	What does CAP stand for in CAP theorem? 		
+90	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+91	Who discovered penicillin?		
+92	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+93	What is the search time in a finger table used by Chord?		
+94	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
 95	What is the search time in a Red-Black tree?		
-96	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
-97	How many children can a node in a binary tree have?		
-98	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
-99	Who discovered penicillin?		
-100	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
-101	What is 0b1100 in decimal?		
+96	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+97	What is 0b1100 in decimal?		
+98	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+99	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+100	2 A node can also have 0 or 1, but 2 is the max		
+101	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
 102	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
-103	What is 0b1100 in decimal?		
-104	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
-105	Who discovered penicillin?		
-106	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
-107	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
-108	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
-109	What is C in e=mc^2?		
-110	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
-111	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
-112	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
-113	How many children can a node in a binary tree have?		
-114	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
-115	What is 0b1100 in decimal?		
-116	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+103	What does CAP stand for in CAP theorem? 		
+104	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+105	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+106	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+107	What is 0b1100 in decimal?		
+108	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+109	How many children can a node in a binary tree have?		
+110	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+111	What does CAP stand for in CAP theorem? 		
+112	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+113	What is the search time in a Red-Black tree?		
+114	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+115	What does CAP stand for in CAP theorem? 		
+116	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
 117	What is the search time in a Red-Black tree?		
-118	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
-119	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
-120	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
-121	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
-122	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
-123	How many children can a node in a binary tree have?		
-124	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
-125	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
-126	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
-127	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
-128	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
-129	What does CAP stand for in CAP theorem? 		
-130	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
-131	When was C created, and by who?		
+118	The speed of light.	More specifically, 299,792,458 m/s	
+119	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+120	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+121	What is 0b1100 in decimal?		
+122	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+123	What is 0b1100 in decimal?		
+124	The speed of light.	More specifically, 299,792,458 m/s	
+125	How many children can a node in a binary tree have?		
+126	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+127	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+128	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+129	What is C in e=mc^2?		
+130	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+131	What does CAP stand for in CAP theorem? 		
 132	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
-133	What does CAP stand for in CAP theorem? 		
-134	2 A node can also have 0 or 1, but 2 is the max		
-135	What is the search time in a finger table used by Chord?		
-136	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
-137	What is C in e=mc^2?		
-138	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
-139	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
-140	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
-141	What is the search time in a Red-Black tree?		
-142	2 A node can also have 0 or 1, but 2 is the max		
-143	What is C in e=mc^2?		
-144	2 A node can also have 0 or 1, but 2 is the max		
-145	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
-146	2 A node can also have 0 or 1, but 2 is the max		
-147	What is the search time in a finger table used by Chord?		
-148	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
-149	How many children can a node in a binary tree have?		
-150	The speed of light.	More specifically, 299,792,458 m/s	
-151	What is C in e=mc^2?		
+133	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+134	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+135	What does CAP stand for in CAP theorem? 		
+136	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+137	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+138	2 A node can also have 0 or 1, but 2 is the max		
+139	When was C created, and by who?		
+140	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+141	What does CAP stand for in CAP theorem? 		
+142	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+143	Who discovered penicillin?		
+144	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+145	Who discovered penicillin?		
+146	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+147	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+148	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+149	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+150	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+151	What is 0b1100 in decimal?		
 152	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
-153	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+153	Who discovered penicillin?		
 154	2 A node can also have 0 or 1, but 2 is the max		
-155	What does CAP stand for in CAP theorem? 		
-156	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
-157	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
-158	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
-159	What is C in e=mc^2?		
-160	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
-161	When was C created, and by who?		
-162	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
-163	How many children can a node in a binary tree have?		
-164	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
-165	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
-166	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
-167	What does CAP stand for in CAP theorem? 		
-168	2 A node can also have 0 or 1, but 2 is the max		
-169	What is C in e=mc^2?		
-170	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
-171	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+155	How many children can a node in a binary tree have?		
+156	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+157	How many children can a node in a binary tree have?		
+158	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+159	What is the search time in a finger table used by Chord?		
+160	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+161	Who discovered penicillin?		
+162	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+163	What is the search time in a Red-Black tree?		
+164	The speed of light.	More specifically, 299,792,458 m/s	
+165	When was C created, and by who?		
+166	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+167	When was C created, and by who?		
+168	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+169	What is the search time in a Red-Black tree?		
+170	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+171	What is C in e=mc^2?		
 172	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
-173	When was C created, and by who?		
-174	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
-175	Who discovered penicillin?		
+173	What does CAP stand for in CAP theorem? 		
+174	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+175	What is 0b1100 in decimal?		
 176	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
-177	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+177	How many children can a node in a binary tree have?		
 178	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
-179	How many children can a node in a binary tree have?		
-180	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+179	What is the search time in a finger table used by Chord?		
+180	2 A node can also have 0 or 1, but 2 is the max		
 181	Who discovered penicillin?		
-182	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
-183	What does CAP stand for in CAP theorem? 		
-184	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
-185	What is the search time in a finger table used by Chord?		
-186	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
-187	What is C in e=mc^2?		
-188	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
-189	Who discovered penicillin?		
-190	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
-191	What does CAP stand for in CAP theorem? 		
+182	2 A node can also have 0 or 1, but 2 is the max		
+183	What is 0b1100 in decimal?		
+184	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+185	What is the search time in a Red-Black tree?		
+186	2 A node can also have 0 or 1, but 2 is the max		
+187	When was C created, and by who?		
+188	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+189	What is C in e=mc^2?		
+190	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+191	Who discovered penicillin?		
 192	The speed of light.	More specifically, 299,792,458 m/s	
-193	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
-194	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
-195	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+193	Who discovered penicillin?		
+194	2 A node can also have 0 or 1, but 2 is the max		
+195	What is 0b1100 in decimal?		
 196	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
-197	What does CAP stand for in CAP theorem? 		
-198	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
-199	When was C created, and by who?		
-200	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
-201	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
-202	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
-203	What is C in e=mc^2?		
-204	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+197	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+198	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+199	What is the search time in a finger table used by Chord?		
+200	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+201	What is C in e=mc^2?		
+202	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+203	What is the search time in a Red-Black tree?		
+204	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
 205	When was C created, and by who?		
-206	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
-207	What is C in e=mc^2?		
-208	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
-209	What is the search time in a finger table used by Chord?		
-210	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
-211	Who discovered penicillin?		
-212	2 A node can also have 0 or 1, but 2 is the max		
-213	Who discovered penicillin?		
-214	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
-215	When was C created, and by who?		
-216	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
-217	What does CAP stand for in CAP theorem? 		
-218	The speed of light.	More specifically, 299,792,458 m/s	
-219	What is 0b1100 in decimal?		
-220	2 A node can also have 0 or 1, but 2 is the max		
-221	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
-222	2 A node can also have 0 or 1, but 2 is the max		
+206	2 A node can also have 0 or 1, but 2 is the max		
+207	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+208	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+209	Who discovered penicillin?		
+210	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+211	What is C in e=mc^2?		
+212	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+213	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+214	2 A node can also have 0 or 1, but 2 is the max		
+215	What is 0b1100 in decimal?		
+216	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+217	How many children can a node in a binary tree have?		
+218	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+219	What is the search time in a finger table used by Chord?		
+220	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+221	What is 0b1100 in decimal?		
+222	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+223	Who discovered penicillin?		
+224	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+225	What is the search time in a Red-Black tree?		
+226	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+227	When was C created, and by who?		
+228	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+229	Who discovered penicillin?		
+230	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+231	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+232	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+233	What is the search time in a finger table used by Chord?		
+234	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+235	What is the search time in a finger table used by Chord?		
+236	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+237	What does CAP stand for in CAP theorem? 		
+238	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+239	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+240	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+241	What is C in e=mc^2?		
+242	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+243	When was C created, and by who?		
+244	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+245	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+246	2 A node can also have 0 or 1, but 2 is the max		
+247	What is C in e=mc^2?		
+248	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+249	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+250	2 A node can also have 0 or 1, but 2 is the max		
+251	What is C in e=mc^2?		
+252	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+253	What is the search time in a finger table used by Chord?		
+254	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+255	When was C created, and by who?		
+256	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+257	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+258	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+259	What is the search time in a finger table used by Chord?		
+260	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+261	How many children can a node in a binary tree have?		
+262	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+263	What does CAP stand for in CAP theorem? 		
+264	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+265	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+266	The speed of light.	More specifically, 299,792,458 m/s	
+267	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+268	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+269	When was C created, and by who?		
+270	The speed of light.	More specifically, 299,792,458 m/s	
+271	What is the search time in a Red-Black tree?		
+272	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+273	What is C in e=mc^2?		
+274	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+275	What is the search time in a Red-Black tree?		
+276	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+277	When was C created, and by who?		
+278	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+279	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+280	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+281	What is C in e=mc^2?		
+282	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+283	What is C in e=mc^2?		
+284	2 A node can also have 0 or 1, but 2 is the max		
+285	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+286	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+287	What is 0b1100 in decimal?		
+288	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+289	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+290	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+291	What is the search time in a finger table used by Chord?		
+292	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+293	What does CAP stand for in CAP theorem? 		
+294	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+295	What is the search time in a Red-Black tree?		
+296	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+297	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+298	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+299	Who discovered penicillin?		
+300	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+301	Who discovered penicillin?		
+302	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+303	What is 0b1100 in decimal?		
+304	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+305	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+306	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+307	How many children can a node in a binary tree have?		
+308	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+309	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+310	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+311	What does CAP stand for in CAP theorem? 		
+312	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+313	What is the search time in a Red-Black tree?		
+314	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+315	What is the search time in a finger table used by Chord?		
+316	2 A node can also have 0 or 1, but 2 is the max		
+317	When was C created, and by who?		
+318	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+319	What is C in e=mc^2?		
+320	2 A node can also have 0 or 1, but 2 is the max		
+321	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+322	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+323	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+324	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+325	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+326	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+327	What is C in e=mc^2?		
+328	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+329	What is the search time in a finger table used by Chord?		
+330	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+331	What is C in e=mc^2?		
+332	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+333	What is 0b1100 in decimal?		
+334	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+335	What is C in e=mc^2?		
+336	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+337	What is 0b1100 in decimal?		
+338	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+339	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+340	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+341	What does CAP stand for in CAP theorem? 		
+342	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+343	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+344	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+345	What is the search time in a finger table used by Chord?		
+346	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+347	When was C created, and by who?		
+348	2 A node can also have 0 or 1, but 2 is the max		
+349	What is the search time in a Red-Black tree?		
+350	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+351	When was C created, and by who?		
+352	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+353	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+354	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+355	When was C created, and by who?		
+356	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+357	What is the search time in a Red-Black tree?		
+358	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+359	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+360	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+361	Who discovered penicillin?		
+362	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+363	How many children can a node in a binary tree have?		
+364	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+365	What is the search time in a Red-Black tree?		
+366	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+367	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+368	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+369	What is C in e=mc^2?		
+370	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+371	What is 0b1100 in decimal?		
+372	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+373	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+374	2 A node can also have 0 or 1, but 2 is the max		
+375	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+376	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+377	What is 0b1100 in decimal?		
+378	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+379	What is C in e=mc^2?		
+380	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+381	What does CAP stand for in CAP theorem? 		
+382	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+383	When was C created, and by who?		
+384	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+385	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+386	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+387	Who discovered penicillin?		
+388	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+389	What is 0b1100 in decimal?		
+390	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+391	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+392	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+393	What does CAP stand for in CAP theorem? 		
+394	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+395	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+396	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+397	What does CAP stand for in CAP theorem? 		
+398	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+399	When was C created, and by who?		
+400	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+401	What is the search time in a Red-Black tree?		
+402	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+403	What does CAP stand for in CAP theorem? 		
+404	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+405	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+406	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+407	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+408	2 A node can also have 0 or 1, but 2 is the max		
+409	Who discovered penicillin?		
+410	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+411	How many children can a node in a binary tree have?		
+412	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+413	What does CAP stand for in CAP theorem? 		
+414	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+415	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+416	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+417	Who discovered penicillin?		
+418	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+419	What does CAP stand for in CAP theorem? 		
+420	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+421	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+422	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+423	How many children can a node in a binary tree have?		
+424	2 A node can also have 0 or 1, but 2 is the max		
+425	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+426	2 A node can also have 0 or 1, but 2 is the max		
+427	Who discovered penicillin?		
+428	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+429	What is 0b1100 in decimal?		
+430	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+431	When was C created, and by who?		
+432	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+433	How many children can a node in a binary tree have?		
+434	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+435	What is the search time in a Red-Black tree?		
+436	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+437	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+438	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+439	What is the search time in a finger table used by Chord?		
+440	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+441	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+442	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+443	Who discovered penicillin?		
+444	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+445	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+446	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+447	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+448	2 A node can also have 0 or 1, but 2 is the max		
+449	What is the search time in a Red-Black tree?		
+450	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+451	What is C in e=mc^2?		
+452	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+453	What is 0b1100 in decimal?		
+454	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+455	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+456	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+457	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+458	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+459	What does CAP stand for in CAP theorem? 		
+460	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+461	What is the search time in a Red-Black tree?		
+462	The speed of light.	More specifically, 299,792,458 m/s	
+463	What does CAP stand for in CAP theorem? 		
+464	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+465	Who discovered penicillin?		
+466	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+467	What is 0b1100 in decimal?		
+468	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+469	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+470	2 A node can also have 0 or 1, but 2 is the max		
+471	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+472	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+473	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+474	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+475	What is the search time in a Red-Black tree?		
+476	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+477	How many children can a node in a binary tree have?		
+478	2 A node can also have 0 or 1, but 2 is the max		
+479	What is the search time in a finger table used by Chord?		
+480	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+481	When was C created, and by who?		
+482	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+483	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+484	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+485	When was C created, and by who?		
+486	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+487	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+488	2 A node can also have 0 or 1, but 2 is the max		
+489	How many children can a node in a binary tree have?		
+490	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+491	When was C created, and by who?		
+492	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+493	What is 0b1100 in decimal?		
+494	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+495	When was C created, and by who?		
+496	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+497	What is the search time in a finger table used by Chord?		
+498	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+499	What does CAP stand for in CAP theorem? 		
+500	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+501	What is 0b1100 in decimal?		
+502	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+503	When was C created, and by who?		
+504	The speed of light.	More specifically, 299,792,458 m/s	
+505	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+506	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+507	What is 0b1100 in decimal?		
+508	2 A node can also have 0 or 1, but 2 is the max		
+509	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+510	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+511	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+512	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+513	What does CAP stand for in CAP theorem? 		
+514	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+515	What is the search time in a finger table used by Chord?		
+516	The speed of light.	More specifically, 299,792,458 m/s	
+517	What is C in e=mc^2?		
+518	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+519	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+520	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+521	When was C created, and by who?		
+522	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+523	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+524	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+525	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+526	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+527	What is the search time in a Red-Black tree?		
+528	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+529	What is the search time in a finger table used by Chord?		
+530	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+531	What is the search time in a Red-Black tree?		
+532	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+533	When was C created, and by who?		
+534	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+535	How many children can a node in a binary tree have?		
+536	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+537	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+538	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+539	What is C in e=mc^2?		
+540	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+541	Who discovered penicillin?		
+542	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+543	How many children can a node in a binary tree have?		
+544	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+545	What does CAP stand for in CAP theorem? 		
+546	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+547	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+548	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+549	What does CAP stand for in CAP theorem? 		
+550	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+551	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+552	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+553	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+554	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+555	Who discovered penicillin?		
+556	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+557	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+558	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+559	What does CAP stand for in CAP theorem? 		
+560	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+561	When was C created, and by who?		
+562	2 A node can also have 0 or 1, but 2 is the max		
+563	What is 0b1100 in decimal?		
+564	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+565	Who discovered penicillin?		
+566	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+567	When was C created, and by who?		
+568	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+569	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+570	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+571	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+572	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+573	How many children can a node in a binary tree have?		
+574	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+575	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+576	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+577	What is 0b1100 in decimal?		
+578	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+579	When was C created, and by who?		
+580	2 A node can also have 0 or 1, but 2 is the max		
+581	When was C created, and by who?		
+582	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+583	What is the search time in a finger table used by Chord?		
+584	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+585	When was C created, and by who?		
+586	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+587	What is the search time in a Red-Black tree?		
+588	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+589	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+590	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+591	Who discovered penicillin?		
+592	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+593	What is the search time in a finger table used by Chord?		
+594	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+595	What is the search time in a Red-Black tree?		
+596	The speed of light.	More specifically, 299,792,458 m/s	
+597	What does CAP stand for in CAP theorem? 		
+598	2 A node can also have 0 or 1, but 2 is the max		
+599	What is the search time in a finger table used by Chord?		
+600	The speed of light.	More specifically, 299,792,458 m/s	
+601	How many children can a node in a binary tree have?		
+602	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+603	What is the search time in a Red-Black tree?		
+604	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+605	What is the search time in a finger table used by Chord?		
+606	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+607	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+608	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+609	What is 0b1100 in decimal?		
+610	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+611	How many children can a node in a binary tree have?		
+612	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+613	What is the search time in a Red-Black tree?		
+614	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+615	What is 0b1100 in decimal?		
+616	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+617	When was C created, and by who?		
+618	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+619	What does CAP stand for in CAP theorem? 		
+620	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+621	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+622	The speed of light.	More specifically, 299,792,458 m/s	
+623	Who discovered penicillin?		
+624	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+625	What is the search time in a finger table used by Chord?		
+626	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+627	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+628	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+629	What is C in e=mc^2?		
+630	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+631	What is C in e=mc^2?		
+632	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+633	What is the search time in a finger table used by Chord?		
+634	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+635	When was C created, and by who?		
+636	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+637	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+638	2 A node can also have 0 or 1, but 2 is the max		
+639	When was C created, and by who?		
+640	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+641	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+642	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+643	What is 0b1100 in decimal?		
+644	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+645	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+646	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+647	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+648	The speed of light.	More specifically, 299,792,458 m/s	
+649	How many children can a node in a binary tree have?		
+650	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+651	What is C in e=mc^2?		
+652	2 A node can also have 0 or 1, but 2 is the max		
+653	Who discovered penicillin?		
+654	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+655	What does CAP stand for in CAP theorem? 		
+656	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+657	What is the search time in a Red-Black tree?		
+658	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+659	Who discovered penicillin?		
+660	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+661	What is C in e=mc^2?		
+662	2 A node can also have 0 or 1, but 2 is the max		
+663	What is C in e=mc^2?		
+664	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+665	What is the search time in a Red-Black tree?		
+666	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+667	What is C in e=mc^2?		
+668	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+669	How many children can a node in a binary tree have?		
+670	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+671	When was C created, and by who?		
+672	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+673	What is the search time in a Red-Black tree?		
+674	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+675	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+676	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+677	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+678	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+679	What is C in e=mc^2?		
+680	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+681	What is the search time in a finger table used by Chord?		
+682	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+683	What does CAP stand for in CAP theorem? 		
+684	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+685	Who discovered penicillin?		
+686	The speed of light.	More specifically, 299,792,458 m/s	
+687	When was C created, and by who?		
+688	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+689	What does CAP stand for in CAP theorem? 		
+690	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+691	How many children can a node in a binary tree have?		
+692	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+693	What is the search time in a finger table used by Chord?		
+694	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+695	When was C created, and by who?		
+696	The speed of light.	More specifically, 299,792,458 m/s	
+697	What does CAP stand for in CAP theorem? 		
+698	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+699	How many children can a node in a binary tree have?		
+700	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+701	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+702	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+703	How many children can a node in a binary tree have?		
+704	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+705	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+706	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+707	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+708	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+709	How many children can a node in a binary tree have?		
+710	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+711	Who discovered penicillin?		
+712	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+713	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+714	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+715	When was C created, and by who?		
+716	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+717	What does CAP stand for in CAP theorem? 		
+718	2 A node can also have 0 or 1, but 2 is the max		
+719	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+720	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+721	What is the search time in a finger table used by Chord?		
+722	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+723	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+724	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+725	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+726	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+727	What is 0b1100 in decimal?		
+728	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+729	What does CAP stand for in CAP theorem? 		
+730	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+731	What is the search time in a finger table used by Chord?		
+732	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+733	What is C in e=mc^2?		
+734	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+735	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+736	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+737	How many children can a node in a binary tree have?		
+738	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+739	Who discovered penicillin?		
+740	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+741	What is C in e=mc^2?		
+742	2 A node can also have 0 or 1, but 2 is the max		
+743	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+744	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+745	When was C created, and by who?		
+746	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+747	Who discovered penicillin?		
+748	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+749	When was C created, and by who?		
+750	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+751	What is 0b1100 in decimal?		
+752	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+753	What is 0b1100 in decimal?		
+754	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+755	What is 0b1100 in decimal?		
+756	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+757	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+758	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+759	How many children can a node in a binary tree have?		
+760	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+761	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+762	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+763	What does CAP stand for in CAP theorem? 		
+764	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+765	What is 0b1100 in decimal?		
+766	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+767	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+768	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+769	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+770	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+771	How many children can a node in a binary tree have?		
+772	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+773	What is 0b1100 in decimal?		
+774	The speed of light.	More specifically, 299,792,458 m/s	
+775	What is 0b1100 in decimal?		
+776	2 A node can also have 0 or 1, but 2 is the max		
+777	When was C created, and by who?		
+778	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+779	What is the search time in a finger table used by Chord?		
+780	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+781	How many children can a node in a binary tree have?		
+782	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+783	What is 0b1100 in decimal?		
+784	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+785	Who discovered penicillin?		
+786	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+787	What does CAP stand for in CAP theorem? 		
+788	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+789	What does CAP stand for in CAP theorem? 		
+790	2 A node can also have 0 or 1, but 2 is the max		
+791	Who discovered penicillin?		
+792	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+793	What is the search time in a finger table used by Chord?		
+794	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+795	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+796	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+797	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+798	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+799	Who discovered penicillin?		
+800	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+801	How many children can a node in a binary tree have?		
+802	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+803	What is the search time in a Red-Black tree?		
+804	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+805	What is the search time in a Red-Black tree?		
+806	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+807	What does CAP stand for in CAP theorem? 		
+808	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+809	What is the search time in a Red-Black tree?		
+810	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+811	When was C created, and by who?		
+812	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+813	Who discovered penicillin?		
+814	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+815	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+816	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+817	How many children can a node in a binary tree have?		
+818	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+819	When was C created, and by who?		
+820	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+821	What is the search time in a Red-Black tree?		
+822	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+823	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+824	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+825	How many children can a node in a binary tree have?		
+826	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+827	What is the search time in a Red-Black tree?		
+828	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+829	What does CAP stand for in CAP theorem? 		
+830	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+831	What is the search time in a finger table used by Chord?		
+832	2 A node can also have 0 or 1, but 2 is the max		
+833	What is the search time in a Red-Black tree?		
+834	The speed of light.	More specifically, 299,792,458 m/s	
+835	How many children can a node in a binary tree have?		
+836	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+837	What is C in e=mc^2?		
+838	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+839	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+840	2 A node can also have 0 or 1, but 2 is the max		
+841	What is the search time in a finger table used by Chord?		
+842	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+843	What is 0b1100 in decimal?		
+844	2 A node can also have 0 or 1, but 2 is the max		
+845	What does CAP stand for in CAP theorem? 		
+846	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+847	What does CAP stand for in CAP theorem? 		
+848	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+849	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+850	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+851	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+852	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+853	What is 0b1100 in decimal?		
+854	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+855	What is the search time in a Red-Black tree?		
+856	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+857	What is the search time in a Red-Black tree?		
+858	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+859	When was C created, and by who?		
+860	The speed of light.	More specifically, 299,792,458 m/s	
+861	When was C created, and by who?		
+862	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+863	What is the search time in a finger table used by Chord?		
+864	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+865	What does CAP stand for in CAP theorem? 		
+866	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+867	What is 0b1100 in decimal?		
+868	2 A node can also have 0 or 1, but 2 is the max		
+869	Who discovered penicillin?		
+870	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+871	What is C in e=mc^2?		
+872	2 A node can also have 0 or 1, but 2 is the max		
+873	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+874	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+875	What is the search time in a finger table used by Chord?		
+876	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+877	When was C created, and by who?		
+878	2 A node can also have 0 or 1, but 2 is the max		
+879	What does CAP stand for in CAP theorem? 		
+880	2 A node can also have 0 or 1, but 2 is the max		
+881	When was C created, and by who?		
+882	2 A node can also have 0 or 1, but 2 is the max		
+883	When was C created, and by who?		
+884	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+885	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+886	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+887	Who discovered penicillin?		
+888	2 A node can also have 0 or 1, but 2 is the max		
+889	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+890	2 A node can also have 0 or 1, but 2 is the max		
+891	When was C created, and by who?		
+892	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+893	What is the search time in a finger table used by Chord?		
+894	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+895	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+896	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+897	What does CAP stand for in CAP theorem? 		
+898	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+899	Who discovered penicillin?		
+900	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+901	What is the search time in a finger table used by Chord?		
+902	2 A node can also have 0 or 1, but 2 is the max		
+903	How many children can a node in a binary tree have?		
+904	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+905	Who discovered penicillin?		
+906	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+907	What is C in e=mc^2?		
+908	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+909	What does CAP stand for in CAP theorem? 		
+910	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+911	How many children can a node in a binary tree have?		
+912	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+913	What does CAP stand for in CAP theorem? 		
+914	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+915	What is 0b1100 in decimal?		
+916	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+917	What is C in e=mc^2?		
+918	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+919	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+920	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+921	What is the search time in a finger table used by Chord?		
+922	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+923	What is the search time in a finger table used by Chord?		
+924	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+925	What does CAP stand for in CAP theorem? 		
+926	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+927	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+928	2 A node can also have 0 or 1, but 2 is the max		
+929	How many children can a node in a binary tree have?		
+930	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+931	What does CAP stand for in CAP theorem? 		
+932	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+933	What does CAP stand for in CAP theorem? 		
+934	2 A node can also have 0 or 1, but 2 is the max		
+935	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+936	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+937	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+938	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+939	What is the search time in a Red-Black tree?		
+940	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+941	Who discovered penicillin?		
+942	2 A node can also have 0 or 1, but 2 is the max		
+943	What does CAP stand for in CAP theorem? 		
+944	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+945	When was C created, and by who?		
+946	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+947	What is C in e=mc^2?		
+948	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+949	When was C created, and by who?		
+950	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+951	What is 0b1100 in decimal?		
+952	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+953	What is C in e=mc^2?		
+954	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+955	What does CAP stand for in CAP theorem? 		
+956	2 A node can also have 0 or 1, but 2 is the max		
+957	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+958	2 A node can also have 0 or 1, but 2 is the max		
+959	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+960	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+961	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+962	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+963	Who discovered penicillin?		
+964	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+965	What is the search time in a Red-Black tree?		
+966	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+967	What is the search time in a finger table used by Chord?		
+968	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+969	Who discovered penicillin?		
+970	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+971	What is the search time in a Red-Black tree?		
+972	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+973	Who discovered penicillin?		
+974	2 A node can also have 0 or 1, but 2 is the max		
+975	What is 0b1100 in decimal?		
+976	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+977	How many children can a node in a binary tree have?		
+978	The speed of light.	More specifically, 299,792,458 m/s	
+979	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+980	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+981	When was C created, and by who?		
+982	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+983	What is the search time in a Red-Black tree?		
+984	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+985	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+986	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+987	When was C created, and by who?		
+988	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+989	Who discovered penicillin?		
+990	The speed of light.	More specifically, 299,792,458 m/s	
+991	How many children can a node in a binary tree have?		
+992	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+993	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+994	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+995	What is C in e=mc^2?		
+996	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+997	What is the search time in a finger table used by Chord?		
+998	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+999	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+1000	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1001	What is the search time in a finger table used by Chord?		
+1002	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1003	What is the search time in a Red-Black tree?		
+1004	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1005	Who discovered penicillin?		
+1006	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1007	What is C in e=mc^2?		
+1008	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1009	What does CAP stand for in CAP theorem? 		
+1010	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1011	How many children can a node in a binary tree have?		
+1012	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1013	What does CAP stand for in CAP theorem? 		
+1014	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1015	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+1016	The speed of light.	More specifically, 299,792,458 m/s	
+1017	What is C in e=mc^2?		
+1018	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1019	What is the search time in a finger table used by Chord?		
+1020	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+1021	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+1022	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1023	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+1024	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+1025	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1026	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1027	When was C created, and by who?		
+1028	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+1029	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1030	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1031	How many children can a node in a binary tree have?		
+1032	2 A node can also have 0 or 1, but 2 is the max		
+1033	Who discovered penicillin?		
+1034	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1035	Who discovered penicillin?		
+1036	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+1037	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+1038	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1039	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+1040	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1041	Who discovered penicillin?		
+1042	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1043	What is 0b1100 in decimal?		
+1044	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+1045	What is the search time in a finger table used by Chord?		
+1046	2 A node can also have 0 or 1, but 2 is the max		
+1047	What is the search time in a finger table used by Chord?		
+1048	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1049	What is C in e=mc^2?		
+1050	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1051	Who discovered penicillin?		
+1052	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1053	How many children can a node in a binary tree have?		
+1054	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1055	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+1056	2 A node can also have 0 or 1, but 2 is the max		
+1057	How many children can a node in a binary tree have?		
+1058	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1059	When was C created, and by who?		
+1060	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1061	What is the search time in a Red-Black tree?		
+1062	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1063	When was C created, and by who?		
+1064	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1065	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+1066	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1067	What is the search time in a finger table used by Chord?		
+1068	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1069	When was C created, and by who?		
+1070	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1071	What is C in e=mc^2?		
+1072	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1073	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+1074	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1075	How many children can a node in a binary tree have?		
+1076	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1077	What is C in e=mc^2?		
+1078	2 A node can also have 0 or 1, but 2 is the max		
+1079	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1080	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+1081	How many children can a node in a binary tree have?		
+1082	2 A node can also have 0 or 1, but 2 is the max		
+1083	What is C in e=mc^2?		
+1084	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1085	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+1086	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1087	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1088	2 A node can also have 0 or 1, but 2 is the max		
+1089	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1090	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1091	What is the search time in a finger table used by Chord?		
+1092	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1093	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+1094	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1095	When was C created, and by who?		
+1096	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1097	What is C in e=mc^2?		
+1098	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1099	When was C created, and by who?		
+1100	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1101	What is 0b1100 in decimal?		
+1102	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1103	What is the search time in a Red-Black tree?		
+1104	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1105	What is the search time in a Red-Black tree?		
+1106	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1107	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1108	2 A node can also have 0 or 1, but 2 is the max		
+1109	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+1110	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1111	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1112	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1113	How many children can a node in a binary tree have?		
+1114	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+1115	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+1116	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1117	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1118	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+1119	How many children can a node in a binary tree have?		
+1120	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1121	When was C created, and by who?		
+1122	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1123	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+1124	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1125	What does CAP stand for in CAP theorem? 		
+1126	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1127	How many children can a node in a binary tree have?		
+1128	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+1129	What is 0b1100 in decimal?		
+1130	The speed of light.	More specifically, 299,792,458 m/s	
+1131	What does CAP stand for in CAP theorem? 		
+1132	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1133	What does CAP stand for in CAP theorem? 		
+1134	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1135	What is the search time in a finger table used by Chord?		
+1136	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1137	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+1138	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1139	What is the search time in a Red-Black tree?		
+1140	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+1141	What is 0b1100 in decimal?		
+1142	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+1143	What is 0b1100 in decimal?		
+1144	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1145	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+1146	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1147	When was C created, and by who?		
+1148	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1149	What is 0b1100 in decimal?		
+1150	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1151	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+1152	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1153	What is 0b1100 in decimal?		
+1154	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1155	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1156	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1157	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+1158	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1159	What is 0b1100 in decimal?		
+1160	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+1161	When was C created, and by who?		
+1162	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1163	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1164	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+1165	What is the search time in a Red-Black tree?		
+1166	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1167	Who discovered penicillin?		
+1168	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+1169	What does CAP stand for in CAP theorem? 		
+1170	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1171	What is the search time in a finger table used by Chord?		
+1172	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1173	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+1174	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+1175	How many children can a node in a binary tree have?		
+1176	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1177	How many children can a node in a binary tree have?		
+1178	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1179	What is C in e=mc^2?		
+1180	2 A node can also have 0 or 1, but 2 is the max		
+1181	What is the search time in a finger table used by Chord?		
+1182	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1183	What does CAP stand for in CAP theorem? 		
+1184	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1185	When was C created, and by who?		
+1186	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1187	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1188	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1189	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+1190	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1191	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+1192	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1193	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+1194	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1195	Who discovered penicillin?		
+1196	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1197	What is the search time in a finger table used by Chord?		
+1198	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1199	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1200	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1201	Who discovered penicillin?		
+1202	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+1203	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1204	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1205	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1206	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1207	What is 0b1100 in decimal?		
+1208	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1209	What is C in e=mc^2?		
+1210	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1211	What does CAP stand for in CAP theorem? 		
+1212	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1213	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1214	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1215	What is the search time in a Red-Black tree?		
+1216	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+1217	What is the search time in a finger table used by Chord?		
+1218	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1219	When was C created, and by who?		
+1220	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1221	How many children can a node in a binary tree have?		
+1222	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1223	What is 0b1100 in decimal?		
+1224	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1225	What is the search time in a finger table used by Chord?		
+1226	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1227	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+1228	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1229	What is 0b1100 in decimal?		
+1230	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1231	What does CAP stand for in CAP theorem? 		
+1232	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1233	Who discovered penicillin?		
+1234	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1235	What is C in e=mc^2?		
+1236	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1237	When was C created, and by who?		
+1238	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+1239	What is C in e=mc^2?		
+1240	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1241	What is 0b1100 in decimal?		
+1242	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1243	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1244	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1245	What is 0b1100 in decimal?		
+1246	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1247	What is the search time in a finger table used by Chord?		
+1248	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1249	How many children can a node in a binary tree have?		
+1250	The speed of light.	More specifically, 299,792,458 m/s	
+1251	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1252	The speed of light.	More specifically, 299,792,458 m/s	
+1253	How many children can a node in a binary tree have?		
+1254	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1255	What does CAP stand for in CAP theorem? 		
+1256	2 A node can also have 0 or 1, but 2 is the max		
+1257	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+1258	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1259	When was C created, and by who?		
+1260	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1261	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1262	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1263	Who discovered penicillin?		
+1264	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1265	What is the search time in a finger table used by Chord?		
+1266	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+1267	When was C created, and by who?		
+1268	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1269	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+1270	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1271	What is the search time in a Red-Black tree?		
+1272	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1273	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+1274	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1275	What does CAP stand for in CAP theorem? 		
+1276	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1277	What is the search time in a finger table used by Chord?		
+1278	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1279	What is the search time in a Red-Black tree?		
+1280	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1281	Who discovered penicillin?		
+1282	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1283	How many children can a node in a binary tree have?		
+1284	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1285	What is 0b1100 in decimal?		
+1286	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+1287	What is the search time in a finger table used by Chord?		
+1288	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1289	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1290	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1291	What is 0b1100 in decimal?		
+1292	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+1293	What is C in e=mc^2?		
+1294	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1295	What is the search time in a Red-Black tree?		
+1296	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1297	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1298	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1299	What does CAP stand for in CAP theorem? 		
+1300	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1301	What is C in e=mc^2?		
+1302	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1303	Who discovered penicillin?		
+1304	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1305	What is the search time in a finger table used by Chord?		
+1306	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1307	What is the search time in a Red-Black tree?		
+1308	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+1309	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1310	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+1311	What is C in e=mc^2?		
+1312	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1313	What is the search time in a Red-Black tree?		
+1314	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+1315	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+1316	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+1317	What is C in e=mc^2?		
+1318	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+1319	Who discovered penicillin?		
+1320	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+1321	What is C in e=mc^2?		
+1322	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1323	When was C created, and by who?		
+1324	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1325	What does CAP stand for in CAP theorem? 		
+1326	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1327	What is the search time in a Red-Black tree?		
+1328	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1329	What is the search time in a finger table used by Chord?		
+1330	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1331	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+1332	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1333	When was C created, and by who?		
+1334	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1335	When was C created, and by who?		
+1336	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1337	What is 0b1100 in decimal?		
+1338	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+1339	How many children can a node in a binary tree have?		
+1340	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1341	When was C created, and by who?		
+1342	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+1343	What is C in e=mc^2?		
+1344	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1345	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+1346	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1347	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+1348	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1349	How many children can a node in a binary tree have?		
+1350	2 A node can also have 0 or 1, but 2 is the max		
+1351	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1352	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1353	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1354	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1355	Who discovered penicillin?		
+1356	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1357	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+1358	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1359	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+1360	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1361	How many children can a node in a binary tree have?		
+1362	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1363	What is 0b1100 in decimal?		
+1364	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1365	What is the search time in a Red-Black tree?		
+1366	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1367	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+1368	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+1369	What is the search time in a Red-Black tree?		
+1370	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1371	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1372	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1373	When was C created, and by who?		
+1374	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1375	What does CAP stand for in CAP theorem? 		
+1376	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1377	What does CAP stand for in CAP theorem? 		
+1378	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1379	When was C created, and by who?		
+1380	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+1381	What is C in e=mc^2?		
+1382	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1383	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1384	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1385	Who discovered penicillin?		
+1386	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1387	When was C created, and by who?		
+1388	The speed of light.	More specifically, 299,792,458 m/s	
+1389	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+1390	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+1391	How many children can a node in a binary tree have?		
+1392	2 A node can also have 0 or 1, but 2 is the max		
+1393	When was C created, and by who?		
+1394	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1395	What is 0b1100 in decimal?		
+1396	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1397	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1398	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1399	What is the search time in a Red-Black tree?		
+1400	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1401	What does CAP stand for in CAP theorem? 		
+1402	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1403	What is the search time in a finger table used by Chord?		
+1404	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1405	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+1406	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1407	What does CAP stand for in CAP theorem? 		
+1408	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1409	What does CAP stand for in CAP theorem? 		
+1410	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1411	What is the search time in a finger table used by Chord?		
+1412	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1413	What is C in e=mc^2?		
+1414	2 A node can also have 0 or 1, but 2 is the max		
+1415	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+1416	The speed of light.	More specifically, 299,792,458 m/s	
+1417	What is 0b1100 in decimal?		
+1418	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1419	What is 0b1100 in decimal?		
+1420	The speed of light.	More specifically, 299,792,458 m/s	
+1421	What does CAP stand for in CAP theorem? 		
+1422	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1423	Who discovered penicillin?		
+1424	The speed of light.	More specifically, 299,792,458 m/s	
+1425	What is the search time in a Red-Black tree?		
+1426	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1427	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1428	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1429	Who discovered penicillin?		
+1430	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1431	When was C created, and by who?		
+1432	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+1433	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1434	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1435	What does CAP stand for in CAP theorem? 		
+1436	The speed of light.	More specifically, 299,792,458 m/s	
+1437	When was C created, and by who?		
+1438	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1439	What does CAP stand for in CAP theorem? 		
+1440	2 A node can also have 0 or 1, but 2 is the max		
+1441	What is C in e=mc^2?		
+1442	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1443	How many children can a node in a binary tree have?		
+1444	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1445	What is 0b1100 in decimal?		
+1446	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1447	What is the search time in a finger table used by Chord?		
+1448	The speed of light.	More specifically, 299,792,458 m/s	
+1449	What is 0b1100 in decimal?		
+1450	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1451	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+1452	The speed of light.	More specifically, 299,792,458 m/s	
+1453	When was C created, and by who?		
+1454	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1455	What is the search time in a finger table used by Chord?		
+1456	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1457	What does CAP stand for in CAP theorem? 		
+1458	2 A node can also have 0 or 1, but 2 is the max		
+1459	When was C created, and by who?		
+1460	2 A node can also have 0 or 1, but 2 is the max		
+1461	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+1462	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1463	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1464	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1465	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1466	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+1467	What is 0b1100 in decimal?		
+1468	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1469	What does CAP stand for in CAP theorem? 		
+1470	2 A node can also have 0 or 1, but 2 is the max		
+1471	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1472	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1473	What does CAP stand for in CAP theorem? 		
+1474	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1475	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+1476	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1477	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+1478	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+1479	What is the search time in a Red-Black tree?		
+1480	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+1481	Who discovered penicillin?		
+1482	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1483	What is the search time in a finger table used by Chord?		
+1484	The speed of light.	More specifically, 299,792,458 m/s	
+1485	What is 0b1100 in decimal?		
+1486	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1487	What does CAP stand for in CAP theorem? 		
+1488	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1489	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+1490	2 A node can also have 0 or 1, but 2 is the max		
+1491	What is the search time in a finger table used by Chord?		
+1492	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1493	What is the search time in a finger table used by Chord?		
+1494	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1495	What does CAP stand for in CAP theorem? 		
+1496	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1497	Who discovered penicillin?		
+1498	2 A node can also have 0 or 1, but 2 is the max		
+1499	When was C created, and by who?		
+1500	2 A node can also have 0 or 1, but 2 is the max		
+1501	When was C created, and by who?		
+1502	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+1503	When was C created, and by who?		
+1504	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1505	How many children can a node in a binary tree have?		
+1506	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1507	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+1508	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1509	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+1510	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1511	How many children can a node in a binary tree have?		
+1512	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1513	What is the search time in a finger table used by Chord?		
+1514	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1515	What is C in e=mc^2?		
+1516	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1517	What is 0b1100 in decimal?		
+1518	2 A node can also have 0 or 1, but 2 is the max		
+1519	How many children can a node in a binary tree have?		
+1520	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1521	When was C created, and by who?		
+1522	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1523	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+1524	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+1525	What is 0b1100 in decimal?		
+1526	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1527	How many children can a node in a binary tree have?		
+1528	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1529	How many children can a node in a binary tree have?		
+1530	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+1531	How many children can a node in a binary tree have?		
+1532	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1533	What is the search time in a finger table used by Chord?		
+1534	The speed of light.	More specifically, 299,792,458 m/s	
+1535	What is the search time in a Red-Black tree?		
+1536	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1537	Who discovered penicillin?		
+1538	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+1539	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+1540	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1541	What is C in e=mc^2?		
+1542	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1543	What is the search time in a Red-Black tree?		
+1544	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1545	Who discovered penicillin?		
+1546	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+1547	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+1548	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1549	What is C in e=mc^2?		
+1550	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1551	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1552	2 A node can also have 0 or 1, but 2 is the max		
+1553	What is C in e=mc^2?		
+1554	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1555	What is the search time in a Red-Black tree?		
+1556	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+1557	How many children can a node in a binary tree have?		
+1558	2 A node can also have 0 or 1, but 2 is the max		
+1559	How many children can a node in a binary tree have?		
+1560	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1561	What is C in e=mc^2?		
+1562	The speed of light.	More specifically, 299,792,458 m/s	
+1563	What is 0b1100 in decimal?		
+1564	The speed of light.	More specifically, 299,792,458 m/s	
+1565	How many children can a node in a binary tree have?		
+1566	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1567	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1568	The speed of light.	More specifically, 299,792,458 m/s	
+1569	When was C created, and by who?		
+1570	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1571	What does CAP stand for in CAP theorem? 		
+1572	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+1573	What is C in e=mc^2?		
+1574	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1575	What is the search time in a Red-Black tree?		
+1576	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1577	What is the search time in a finger table used by Chord?		
+1578	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1579	What is 0b1100 in decimal?		
+1580	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+1581	What does CAP stand for in CAP theorem? 		
+1582	2 A node can also have 0 or 1, but 2 is the max		
+1583	Who discovered penicillin?		
+1584	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1585	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+1586	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1587	What is the search time in a finger table used by Chord?		
+1588	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1589	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+1590	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1591	When was C created, and by who?		
+1592	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+1593	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+1594	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1595	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1596	The speed of light.	More specifically, 299,792,458 m/s	
+1597	When was C created, and by who?		
+1598	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1599	When was C created, and by who?		
+1600	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1601	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+1602	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1603	What does CAP stand for in CAP theorem? 		
+1604	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1605	How many children can a node in a binary tree have?		
+1606	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1607	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1608	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1609	When was C created, and by who?		
+1610	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1611	When was C created, and by who?		
+1612	The speed of light.	More specifically, 299,792,458 m/s	
+1613	When was C created, and by who?		
+1614	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1615	When was C created, and by who?		
+1616	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1617	What is 0b1100 in decimal?		
+1618	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1619	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+1620	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1621	What is C in e=mc^2?		
+1622	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1623	What is 0b1100 in decimal?		
+1624	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1625	When was C created, and by who?		
+1626	2 A node can also have 0 or 1, but 2 is the max		
+1627	When was C created, and by who?		
+1628	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1629	What does CAP stand for in CAP theorem? 		
+1630	The speed of light.	More specifically, 299,792,458 m/s	
+1631	What is C in e=mc^2?		
+1632	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1633	What is 0b1100 in decimal?		
+1634	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+1635	What is the search time in a finger table used by Chord?		
+1636	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1637	What does CAP stand for in CAP theorem? 		
+1638	2 A node can also have 0 or 1, but 2 is the max		
+1639	What is 0b1100 in decimal?		
+1640	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1641	What is C in e=mc^2?		
+1642	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1643	What does CAP stand for in CAP theorem? 		
+1644	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1645	What is the search time in a finger table used by Chord?		
+1646	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1647	What does CAP stand for in CAP theorem? 		
+1648	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1649	What is the search time in a Red-Black tree?		
+1650	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1651	How many children can a node in a binary tree have?		
+1652	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1653	Who discovered penicillin?		
+1654	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1655	What is the search time in a Red-Black tree?		
+1656	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1657	When was C created, and by who?		
+1658	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1659	When was C created, and by who?		
+1660	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1661	Who discovered penicillin?		
+1662	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1663	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+1664	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1665	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+1666	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1667	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+1668	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+1669	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1670	2 A node can also have 0 or 1, but 2 is the max		
+1671	What is the search time in a finger table used by Chord?		
+1672	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1673	What is the search time in a finger table used by Chord?		
+1674	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1675	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+1676	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1677	What does CAP stand for in CAP theorem? 		
+1678	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1679	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1680	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1681	How many children can a node in a binary tree have?		
+1682	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1683	What is C in e=mc^2?		
+1684	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1685	What is C in e=mc^2?		
+1686	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1687	How many children can a node in a binary tree have?		
+1688	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1689	What is C in e=mc^2?		
+1690	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+1691	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1692	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1693	What does CAP stand for in CAP theorem? 		
+1694	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1695	Who discovered penicillin?		
+1696	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+1697	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+1698	2 A node can also have 0 or 1, but 2 is the max		
+1699	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+1700	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+1701	How many children can a node in a binary tree have?		
+1702	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1703	What is the search time in a finger table used by Chord?		
+1704	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1705	What is 0b1100 in decimal?		
+1706	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1707	What does CAP stand for in CAP theorem? 		
+1708	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1709	How many children can a node in a binary tree have?		
+1710	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1711	What is the search time in a finger table used by Chord?		
+1712	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1713	What is 0b1100 in decimal?		
+1714	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1715	What does CAP stand for in CAP theorem? 		
+1716	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1717	What is C in e=mc^2?		
+1718	2 A node can also have 0 or 1, but 2 is the max		
+1719	How many children can a node in a binary tree have?		
+1720	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+1721	What is the search time in a Red-Black tree?		
+1722	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1723	When was C created, and by who?		
+1724	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1725	What is 0b1100 in decimal?		
+1726	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1727	What is the search time in a finger table used by Chord?		
+1728	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1729	What is the search time in a finger table used by Chord?		
+1730	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1731	What is the search time in a finger table used by Chord?		
+1732	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1733	What is C in e=mc^2?		
+1734	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1735	Who discovered penicillin?		
+1736	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1737	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1738	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1739	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1740	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1741	When was C created, and by who?		
+1742	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1743	How many children can a node in a binary tree have?		
+1744	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1745	What is the search time in a Red-Black tree?		
+1746	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1747	How many children can a node in a binary tree have?		
+1748	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1749	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1750	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+1751	Who discovered penicillin?		
+1752	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+1753	What is 0b1100 in decimal?		
+1754	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1755	What does CAP stand for in CAP theorem? 		
+1756	The speed of light.	More specifically, 299,792,458 m/s	
+1757	What is the search time in a finger table used by Chord?		
+1758	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1759	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+1760	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1761	How many children can a node in a binary tree have?		
+1762	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1763	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1764	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1765	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+1766	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1767	How many children can a node in a binary tree have?		
+1768	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1769	What is 0b1100 in decimal?		
+1770	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1771	Who discovered penicillin?		
+1772	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1773	What is the search time in a Red-Black tree?		
+1774	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1775	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+1776	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1777	What is 0b1100 in decimal?		
+1778	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1779	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1780	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1781	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+1782	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1783	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1784	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1785	When was C created, and by who?		
+1786	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+1787	What is 0b1100 in decimal?		
+1788	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1789	When was C created, and by who?		
+1790	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1791	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+1792	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1793	When was C created, and by who?		
+1794	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1795	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+1796	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1797	How many children can a node in a binary tree have?		
+1798	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1799	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+1800	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1801	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1802	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+1803	What is 0b1100 in decimal?		
+1804	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1805	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1806	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1807	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+1808	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+1809	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+1810	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1811	What is C in e=mc^2?		
+1812	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+1813	What does CAP stand for in CAP theorem? 		
+1814	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+1815	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+1816	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1817	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+1818	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1819	What is C in e=mc^2?		
+1820	2 A node can also have 0 or 1, but 2 is the max		
+1821	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1822	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+1823	What is the search time in a finger table used by Chord?		
+1824	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+1825	What is 0b1100 in decimal?		
+1826	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+1827	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1828	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1829	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1830	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1831	When was C created, and by who?		
+1832	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1833	What is the search time in a Red-Black tree?		
+1834	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+1835	How many children can a node in a binary tree have?		
+1836	2 A node can also have 0 or 1, but 2 is the max		
+1837	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1838	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1839	How many children can a node in a binary tree have?		
+1840	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1841	What is the search time in a finger table used by Chord?		
+1842	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1843	What does CAP stand for in CAP theorem? 		
+1844	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1845	How many children can a node in a binary tree have?		
+1846	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1847	What is C in e=mc^2?		
+1848	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+1849	What is 0b1100 in decimal?		
+1850	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1851	What is the search time in a finger table used by Chord?		
+1852	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+1853	What is 0b1100 in decimal?		
+1854	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1855	When was C created, and by who?		
+1856	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1857	What is C in e=mc^2?		
+1858	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1859	What does CAP stand for in CAP theorem? 		
+1860	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1861	What does CAP stand for in CAP theorem? 		
+1862	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1863	When was C created, and by who?		
+1864	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1865	What is 0b1100 in decimal?		
+1866	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1867	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+1868	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+1869	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1870	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1871	What is C in e=mc^2?		
+1872	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1873	What is C in e=mc^2?		
+1874	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1875	How many children can a node in a binary tree have?		
+1876	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1877	Who discovered penicillin?		
+1878	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1879	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+1880	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1881	What does CAP stand for in CAP theorem? 		
+1882	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1883	When was C created, and by who?		
+1884	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1885	How many children can a node in a binary tree have?		
+1886	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1887	What is the search time in a Red-Black tree?		
+1888	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+1889	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1890	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1891	What is 0b1100 in decimal?		
+1892	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1893	What is C in e=mc^2?		
+1894	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+1895	What is the search time in a Red-Black tree?		
+1896	2 A node can also have 0 or 1, but 2 is the max		
+1897	What is 0b1100 in decimal?		
+1898	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1899	How many children can a node in a binary tree have?		
+1900	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1901	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1902	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1903	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1904	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1905	Who discovered penicillin?		
+1906	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+1907	Who discovered penicillin?		
+1908	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1909	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+1910	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1911	How many children can a node in a binary tree have?		
+1912	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1913	Who discovered penicillin?		
+1914	2 A node can also have 0 or 1, but 2 is the max		
+1915	What is the search time in a finger table used by Chord?		
+1916	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1917	What does CAP stand for in CAP theorem? 		
+1918	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1919	What is C in e=mc^2?		
+1920	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+1921	Who discovered penicillin?		
+1922	2 A node can also have 0 or 1, but 2 is the max		
+1923	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1924	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1925	When was C created, and by who?		
+1926	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1927	What is 0b1100 in decimal?		
+1928	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1929	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+1930	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1931	What is the search time in a finger table used by Chord?		
+1932	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1933	What is the search time in a Red-Black tree?		
+1934	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1935	What year did world war 2 start in? 	Where we consider the start to be the invasion of Poland.	
+1936	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1937	Who discovered penicillin?		
+1938	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1939	What is C in e=mc^2?		
+1940	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1941	What is the search time in a Red-Black tree?		
+1942	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1943	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+1944	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1945	What is C in e=mc^2?		
+1946	The speed of light.	More specifically, 299,792,458 m/s	
+1947	How many children can a node in a binary tree have?		
+1948	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1949	How many children can a node in a binary tree have?		
+1950	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+1951	How many children can a node in a binary tree have?		
+1952	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+1953	What is C in e=mc^2?		
+1954	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1955	How many children can a node in a binary tree have?		
+1956	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1957	When was C created, and by who?		
+1958	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1959	What is C in e=mc^2?		
+1960	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+1961	What is 0b1100 in decimal?		
+1962	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1963	What is C in e=mc^2?		
+1964	2 A node can also have 0 or 1, but 2 is the max		
+1965	What does CAP stand for in CAP theorem? 		
+1966	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1967	What is the search time in a Red-Black tree?		
+1968	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+1969	When was C created, and by who?		
+1970	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1971	What does CAP stand for in CAP theorem? 		
+1972	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1973	What is C in e=mc^2?		
+1974	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1975	What is the search time in a Red-Black tree?		
+1976	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+1977	How many children can a node in a binary tree have?		
+1978	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+1979	What is the search time in a Red-Black tree?		
+1980	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1981	When was C created, and by who?		
+1982	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1983	What is the search time in a finger table used by Chord?		
+1984	2 A node can also have 0 or 1, but 2 is the max		
+1985	Who discovered penicillin?		
+1986	2 A node can also have 0 or 1, but 2 is the max		
+1987	How many children can a node in a binary tree have?		
+1988	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+1989	When was C created, and by who?		
+1990	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+1991	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+1992	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+1993	What is the search time in a finger table used by Chord?		
+1994	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+1995	What is 0b1100 in decimal?		
+1996	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+1997	What is 0b1100 in decimal?		
+1998	The speed of light.	More specifically, 299,792,458 m/s	
+1999	How many children can a node in a binary tree have?		
+2000	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+2001	What is C in e=mc^2?		
+2002	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
+2003	Who discovered penicillin?		
+2004	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+2005	What is C in e=mc^2?		
+2006	2 A node can also have 0 or 1, but 2 is the max		
+2007	What is the search time in a Red-Black tree?		
+2008	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+2009	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
+2010	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
+2011	When was C created, and by who?		
+2012	Alexander Fleming	Penicillin was discovered in 1928 by Scottish scientist Alexander Fleming	./afleming_headshot.png
+2013	What is the search time in a finger table used by Chord?		
+2014	September 2, 1945 	Japan announced it's intent to surrender on August 10th, and 23 days later they signed the surrender document.	
+2015	What does CAP stand for in CAP theorem? 		
+2016	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
+2017	What is the search time in a finger table used by Chord?		
+2018	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
+2019	What is the search time in a Red-Black tree?		
+2020	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+2021	When did world war 2 end? 	If we consider Japan's surrender to be the end.	
+2022	1939 	It's normally considered to have started 9/1/1939, with France and the UK declaring war on the 3rd.	
