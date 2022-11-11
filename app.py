@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
 
 def connection():
-    conn = sqlite3.connect('card.db')
+    conn = sqlite3.connect(r'card.db')
     return conn
 
 def createTable():
@@ -375,40 +375,147 @@ def delete_side(side_id):
 
     return message
 
+#--------------------------------------------------------#
 
+def insert_category(cat):
+    new_cat = {}
+
+    try:
+        conn = connection()
+        cur = conn.cursor()
+        cur.execute("INSERT INTO categories(category_id, c_name) VALUES(?,?)", (cat['category_id'], cat['c_name']))
+        conn.commit()
+
+        new_cat = get_category(cur.lastrowid)
+
+    except Error as e:
+        conn().rollback()
+        print(e)
+    
+    return insert_category
+
+def get_category():
+    cats = []
+
+    try:
+        conn = connection()
+        conn.row_factory = sqlite3.Row
+        cur = conn.cursor()
+        cur.execute("SELECT * FROM categories")
+        rows = cur.fetchall()
+
+        for i in rows:
+            cat = {}
+            cat['category_id'] = i['category_id']
+            cat['c_name'] = i['c_name']
+            cats.append(cat)
+
+    except Error as e:
+        cats = []
+    
+    return cats
+
+@app.route('/api/cats', methods=['GET'])
+def api_get_cats():
+    return jsonify(get_category())
 
 #-------------Complex-------------#
+def average_decks_per_user():
+    message = {}
+
+    try:
+        conn = connection()
+        cur = conn.cursor()
+        cur.execute("""
+            SELECT AVG(c) 
+            FROM (
+                SELECT COUNT(*) AS c
+                FROM user_decks
+                GROUP BY user_decks.user_id
+            )
+        """)
+
+        result = (cur.fetchone()[0])
+    except:
+        conn.rollback()
+        message['status'] = "Failed to find average deck count"
+
+    finally:
+        conn.close()
+
+    return result
+
+@app.route('/api/generic', methods=['GET'])
+def api_avg_user():
+    return jsonify(average_decks_per_user())
+
 def categories_to_deck(categories_list, deck_id):
-	message = {}
+    message = {}
 
-	try:
-		conn = connection()
-		# find cards from each category
-		cards = []
-		for category in categories_list:
-			conn.execute("""
-				SELECT card_category.card_id
-				FROM categories
-					INNER JOIN card_category ON categories.category_id = card_category.category_id
-				WHERE categories.c_name LIKE "%?%"
-			""", category)
-			cards += conn.fetchall()
-		# insert into the deck
-		for card in cards:
-			conn.execute("INSERT INTO card_in_deck VALUES (?)", (deck_id, card["card_id"]))
+    category = categories_list
 
-	except:
-		conn.rollback()
-		message['status'] = "Making deck from provided categories failed"
+    try:
+        conn = connection()
+        # find cards from each category
+        cards = []
+        cur = conn.cursor()
+        cur.execute("""
+            SELECT card_category.card_id
+            FROM categories
+                INNER JOIN card_category ON categories.category_id = card_category.category_id
+            WHERE categories.c_name LIKE ?
+        """, (f"%{category}%",))
+        cards = cur.fetchall()
+        # insert into the deck
+        for card in cards:
+            # print(card[0])
+            cur.execute("INSERT INTO card_in_deck VALUES(?,?)", [deck_id, card[0]])
+            # conn.execute("INSERT INTO card_in_deck VALUES(?)", zip([deck_id for x in cards], map(lambda x: x["card_id"], cards)))
+        conn.commit()
 
-	finally:
-		conn.close()
+        message['status'] = "Success"
 
-	return message
+    except Error as e:
+        conn.rollback()
+        print(repr(e))
 
+    finally:
+        conn.close()
 
+    return message
 
+def deck_ranking(deck_id):
 
+    message = {}
+
+    conn = connection()
+    # Find all sessions with a deck
+    cur = conn.cursor()
+    cur.execute("""
+        SELECT user.username, AVG(u_session.correct_ratio)
+        FROM (
+            SELECT session_id AS matching_sessions
+            FROM session_deck
+            WHERE session_deck.deck_id = ?
+        )
+            INNER JOIN u_session ON matching_sessions = u_session.session_id
+            INNER JOIN user ON u_session.sess_userid = user.user_id
+        GROUP BY user.user_id;
+    """, (deck_id,))
+
+    print(cur.fetchall())
+
+    message['status'] = "Success"
+
+    return message
+
+@app.route('/api/complex/<deck_id>', methods=['GET'])
+def api_complex_rank(deck_id):
+    return jsonify(deck_ranking(deck_id))
+
+@app.route('/api/complex/<categories_list>&<deck_id>', methods=['GET','PUT'])
+def api_complex_cat(categories_list, deck_id):
+    return jsonify(categories_to_deck(categories_list, deck_id))
 
 #-------------DECKS-------------#
 @app.route('/api/decks', methods=['GET'])
@@ -462,11 +569,11 @@ def api_get_sides():
     return jsonify(get_sides())
 
 @app.route('/api/sides/<side_id>', methods=['GET'])
-def api_get_deck(side_id):
+def api_get_side(side_id):
     return jsonify(get_sides_by_id(side_id))
 
 @app.route('/api/sides/add', methods=['GET'])
-def api_add_deck():
+def api_add_side():
     side = request.get_json()
     return jsonify(insert_side(side))
 
