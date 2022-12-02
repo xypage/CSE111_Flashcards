@@ -1,11 +1,102 @@
-from flask import Flask, jsonify, request
+import os
+
 from flask_cors import CORS
+
+from flask import Flask, jsonify, redirect, render_template, request, url_for
+from flask_bcrypt import Bcrypt
+from flask_login import (LoginManager, UserMixin, current_user, login_required, login_user, logout_user)
+from flask_sqlalchemy import SQLAlchemy
+from flask_wtf import FlaskForm
+from wtforms import PasswordField, StringField, SubmitField
+from wtforms.validators import InputRequired, Length, ValidationError
 
 import sqlite3
 from sqlite3 import Error
 
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
+maindir = os.path.abspath(os.path.dirname(__file__))
+
+# Database
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(maindir, 'user.sqlite')
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SECRET_KEY'] = 'thisissecret'
+
+bcrypt = Bcrypt(app)
+db = SQLAlchemy(app)
+
+login_manager = LoginManager()
+login_manager.init_app(app)
+login_manager.login_view = 'login'
+
+@login_manager.user_loader
+def load_user(user_id):
+    return User.query.get(int(user_id))
+
+class User(db.Model, UserMixin):
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(20), nullable=False, unique=True)
+    password = db.Column(db.String(32), nullable=False)
+
+class RegisterForm(FlaskForm):
+    username = StringField('Username', validators=[InputRequired(), Length(min=4, max=15)])
+    password = PasswordField('Password', validators=[InputRequired(), Length(min=4, max=15)])
+
+    submit = SubmitField('Sign Up')
+
+    def validate_username(self, username):
+        user = User.query.filter_by(username=username.data).first()
+        if user:
+            raise ValidationError('Username already exists')
+
+class LoginForm(FlaskForm):
+    username = StringField('Username', validators=[InputRequired(), Length(min=4, max=15)])
+    password = PasswordField('Password', validators=[InputRequired(), Length(min=4, max=15)])
+
+    submit = SubmitField('Sign In')
+    def validate_username(self, username):
+        user = User.query.filter_by(username=username.data).first()
+        if user:
+            raise ValidationError('Username already exists')
+
+class LoginForm(FlaskForm):
+    username = StringField('Username', validators=[InputRequired(), Length(min=4, max=15)])
+    password = PasswordField('Password', validators=[InputRequired(), Length(min=4, max=15)])
+
+    submit = SubmitField('Sign In')
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    form = LoginForm()
+
+    if form.validate_on_submit():
+        user = User.query.filter_by(username=form.username.data).first()
+        if user:
+            if bcrypt.check_password_hash(user.password, form.password.data):
+                login_user(user)
+                return redirect(url_for('/'))
+
+    return render_template('index.html', form=form)
+
+@app.route('/logout', methods=['GET', 'POST'])
+@login_required
+def logout():
+    logout_user()
+    return redirect(url_for('login'))
+
+@app.route('/register', methods=['GET', 'POST'])
+def register():
+    form = RegisterForm()
+
+    if form.validate_on_submit():
+        hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
+        new_user = User(username=form.username.data, password=hashed_password)
+        db.session.add(new_user)
+        db.session.commit()
+
+        return redirect(url_for('login'))
+
+    return render_template('signup.html', form=form)
 
 def connection():
     conn = sqlite3.connect(r'card.db')
@@ -177,102 +268,102 @@ def delete_deck(deck_id):
 
 #------------------------------------------------------------------------#
 
-def insert_user(user):
-    new_users = {}
+# def insert_user(user):
+#     new_users = {}
 
-    try:
-        conn = connection()
-        cur = conn.cursor()
-        cur.execute("INSERT INTO user(user_id, username, u_password) VALUES(?,?,?)", (user['user_id'], user['username'], user['password']))
-        conn.commit()
+#     try:
+#         conn = connection()
+#         cur = conn.cursor()
+#         cur.execute("INSERT INTO user(user_id, username, u_password) VALUES(?,?,?)", (user['user_id'], user['username'], user['password']))
+#         conn.commit()
 
-        new_users = get_users(cur.lastrowid)
+#         new_users = get_users(cur.lastrowid)
 
-    except Error as e:
-        conn().rollback()
-        print(e)
+#     except Error as e:
+#         conn().rollback()
+#         print(e)
     
-    return insert_user
+#     return insert_user
 
-def get_users():
-    users = []
+# def get_users():
+#     users = []
 
-    try:
-        conn = connection()
-        conn.row_factory = sqlite3.Row
-        cur = conn.cursor()
-        cur.execute("SELECT * FROM user")
-        rows = cur.fetchall()
+#     try:
+#         conn = connection()
+#         conn.row_factory = sqlite3.Row
+#         cur = conn.cursor()
+#         cur.execute("SELECT * FROM user")
+#         rows = cur.fetchall()
 
-        for i in rows:
-            user = {}
-            user['user_id'] = i['user_id']
-            user['username'] = i['username']
-            user['password'] = i['password']
-            users.append(user)
+#         for i in rows:
+#             user = {}
+#             user['user_id'] = i['user_id']
+#             user['username'] = i['username']
+#             user['password'] = i['password']
+#             users.append(user)
 
-    except Error as e:
-        users = []
+#     except Error as e:
+#         users = []
     
-    return users
+#     return users
 
-def get_users_by_id(user_id):
-    user = {}
+# def get_users_by_id(user_id):
+#     user = {}
 
-    try:
-        conn = connection()
-        conn.row_factory = sqlite3.Row
-        cur = conn.cursor()
-        cur.execute("SELECT * FROM user WHERE user_id = ?", (user_id,))
-        row = cur.fetchone()
+#     try:
+#         conn = connection()
+#         conn.row_factory = sqlite3.Row
+#         cur = conn.cursor()
+#         cur.execute("SELECT * FROM user WHERE user_id = ?", (user_id,))
+#         row = cur.fetchone()
 
-        user['user_id'] = row['user_id']
-        user['username'] = row['username']
-        user['password'] = row['password']
+#         user['user_id'] = row['user_id']
+#         user['username'] = row['username']
+#         user['password'] = row['password']
 
-    except Error as e:
-        user = {}
+#     except Error as e:
+#         user = {}
     
-    return user
+#     return user
 
-def update_user(user):
-    updated_user = {}
+# def update_user(user):
+#     updated_user = {}
 
-    try:
-        conn = connection()
-        cur = conn.cursor()
-        cur.execute("UPDATE user SET username = ?, password = ? WHERE user_id = ?", (user['username'], user['password'],))
+#     try:
+#         conn = connection()
+#         cur = conn.cursor()
+#         cur.execute("UPDATE user SET username = ?, password = ? WHERE user_id = ?", (user['username'], user['password'],))
 
-        conn.commit()
+#         conn.commit()
 
-        #updated user
-        updated_user = get_users_by_id(user['user_id'])
+#         #updated user
+#         updated_user = get_users_by_id(user['user_id'])
 
-    except Error as e:
-        conn.rollback()
-        updated_user = {}
-        print(e)
+#     except Error as e:
+#         conn.rollback()
+#         updated_user = {}
+#         print(e)
     
-    finally:
-        conn.close
+#     finally:
+#         conn.close
 
-def delete_user(user_id):
-    message = {}
+# def delete_user(user_id):
+#     message = {}
 
-    try:
-        conn = connection()
-        conn.execute("DELETE from user WHERE user_id = ?", (user_id,))
+#     try:
+#         conn = connection()
+#         conn.execute("DELETE from user WHERE user_id = ?", (user_id,))
 
-        conn.commit()
-        message['status'] = "Deck deleted succesfully"
+#         conn.commit()
+#         message['status'] = "Deck deleted succesfully"
 
-    except:
-        conn.rollback()
-        message['status'] = "Cannot delete deck"
-    finally:
-        conn.close()
+#     except:
+#         conn.rollback()
+#         message['status'] = "Cannot delete deck"
+#     finally:
+#         conn.close()
 
-    return message
+#     return message
 
 #------------------------------------------------------------------------#
 
@@ -541,27 +632,27 @@ def api_delete_deck(deck_id):
     return jsonify(delete_deck(deck_id))
 
 #-----------USERS----------#
-@app.route('/api/users', methods=['GET'])
-def api_get_users():
-    return jsonify(get_users())
+# @app.route('/api/users', methods=['GET'])
+# def api_get_users():
+#     return jsonify(get_users())
 
-@app.route('/api/users/add', methods=['GET'])
-def api_add_user():
-    user = request.get_json()
-    return jsonify(insert_user(user))
+# @app.route('/api/users/add', methods=['GET'])
+# def api_add_user():
+#     user = request.get_json()
+#     return jsonify(insert_user(user))
 
-@app.route('/api/users/<user_id>', methods=['GET'])
-def api_get_user(user_id):
-    return jsonify(get_users_by_id(user_id))
+# @app.route('/api/users/<user_id>', methods=['GET'])
+# def api_get_user(user_id):
+#     return jsonify(get_users_by_id(user_id))
 
-@app.route('/api/users/update', methods=['PUT'])
-def api_update_user():
-    user = request.get_json()
-    return jsonify(update_user(user))
+# @app.route('/api/users/update', methods=['PUT'])
+# def api_update_user():
+#     user = request.get_json()
+#     return jsonify(update_user(user))
 
-@app.route('/api/users/delete/<user_id>', methods=['DELETE'])
-def api_delete_user(user_id):
-    return jsonify(delete_user(user_id))
+# @app.route('/api/users/delete/<user_id>', methods=['DELETE'])
+# def api_delete_user(user_id):
+#     return jsonify(delete_user(user_id))
 
 #-----------SIDES------------#
 @app.route('/api/sides', methods=['GET'])
