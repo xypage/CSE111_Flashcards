@@ -4,6 +4,7 @@ from flask_cors import CORS
 
 from flask import Flask, jsonify, redirect, render_template, request, url_for
 from flask_bcrypt import Bcrypt
+from flask_marshmallow import Marshmallow
 from flask_login import (LoginManager, UserMixin, current_user, login_required, login_user, logout_user)
 from flask_sqlalchemy import SQLAlchemy
 from flask_wtf import FlaskForm
@@ -18,12 +19,13 @@ CORS(app, resources={r"/*": {"origins": "*"}})
 maindir = os.path.abspath(os.path.dirname(__file__))
 
 # Database
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(maindir, 'user.sqlite')
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(maindir, 'card.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'thisissecret'
 
 bcrypt = Bcrypt(app)
 db = SQLAlchemy(app)
+ma = Marshmallow(app)
 
 login_manager = LoginManager()
 login_manager.init_app(app)
@@ -34,13 +36,16 @@ def load_user(user_id):
     return User.query.get(int(user_id))
 
 class User(db.Model, UserMixin):
-    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(20), nullable=False, unique=True)
-    password = db.Column(db.String(32), nullable=False)
+    u_password = db.Column(db.String(32), nullable=False)
+
+    def get_id(self):
+        return(self.user_id)
 
 class RegisterForm(FlaskForm):
-    username = StringField('Username', validators=[InputRequired(), Length(min=4, max=15)])
-    password = PasswordField('Password', validators=[InputRequired(), Length(min=4, max=15)])
+    username = StringField('username', validators=[InputRequired(), Length(min=4, max=15)])
+    password = PasswordField('u_password', validators=[InputRequired(), Length(min=4, max=15)])
 
     submit = SubmitField('Sign Up')
 
@@ -50,33 +55,33 @@ class RegisterForm(FlaskForm):
             raise ValidationError('Username already exists')
 
 class LoginForm(FlaskForm):
-    username = StringField('Username', validators=[InputRequired(), Length(min=4, max=15)])
-    password = PasswordField('Password', validators=[InputRequired(), Length(min=4, max=15)])
+    username = StringField('username', validators=[InputRequired(), Length(min=4, max=15)])
+    password = PasswordField('u_password', validators=[InputRequired(), Length(min=4, max=15)])
 
     submit = SubmitField('Sign In')
-    def validate_username(self, username):
-        user = User.query.filter_by(username=username.data).first()
-        if user:
-            raise ValidationError('Username already exists')
 
-class LoginForm(FlaskForm):
-    username = StringField('Username', validators=[InputRequired(), Length(min=4, max=15)])
-    password = PasswordField('Password', validators=[InputRequired(), Length(min=4, max=15)])
-
-    submit = SubmitField('Sign In')
+@app.route('/')
+def home():
+    return redirect(url_for('login'))
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     form = LoginForm()
 
+    print("HERE")
+
     if form.validate_on_submit():
+        print("IN LOOP")
         user = User.query.filter_by(username=form.username.data).first()
         if user:
-            if bcrypt.check_password_hash(user.password, form.password.data):
+            print("GOT USER")
+            if bcrypt.check_password_hash(user.u_password, form.password.data):
+                print("CHECKED USER")
                 login_user(user)
-                return redirect(url_for('/'))
+                print("LOGGED IN")
+                return redirect(url_for('profile'))
 
-    return render_template('index.html', form=form)
+    return render_template('login.html', form=form)
 
 @app.route('/logout', methods=['GET', 'POST'])
 @login_required
@@ -90,13 +95,17 @@ def register():
 
     if form.validate_on_submit():
         hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
-        new_user = User(username=form.username.data, password=hashed_password)
+        new_user = User(username=form.username.data, u_password=hashed_password)
         db.session.add(new_user)
         db.session.commit()
 
         return redirect(url_for('login'))
 
     return render_template('signup.html', form=form)
+
+@app.route('/profile', methods=['GET', 'POST'])
+def profile():
+    return render_template('profile.html')
 
 def connection():
     conn = sqlite3.connect(r'card.db')
@@ -617,7 +626,7 @@ def api_get_decks():
 def api_get_deck(deck_id):
     return jsonify(get_decks_by_id(deck_id))
 
-@app.route('/api/decks/add', methods=['GET'])
+@app.route('/api/decks/add', methods=['GET', 'POST'])
 def api_add_deck():
     deck = request.get_json()
     return jsonify(insert_deck(deck))
@@ -636,7 +645,7 @@ def api_delete_deck(deck_id):
 # def api_get_users():
 #     return jsonify(get_users())
 
-# @app.route('/api/users/add', methods=['GET'])
+# @app.route('/api/users/add', methods=['GET', 'POST'])
 # def api_add_user():
 #     user = request.get_json()
 #     return jsonify(insert_user(user))
@@ -663,7 +672,7 @@ def api_get_sides():
 def api_get_side(side_id):
     return jsonify(get_sides_by_id(side_id))
 
-@app.route('/api/sides/add', methods=['GET'])
+@app.route('/api/sides/add', methods=['GET', 'POST'])
 def api_add_side():
     side = request.get_json()
     return jsonify(insert_side(side))
