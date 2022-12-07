@@ -1,43 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
 
-<link rel="stylesheet" href="/static/css/login-1.css">  
+<link rel="stylesheet" href="/static/css/signup.css" />
 <!-- Button to open the modal login form -->
 
-
 <!-- The Modal -->
-<h1>Nursery Web App</h1>
-
 <body>
-<!--First Name-->
-    <div class="container">
-
-        <label for="fname"><b>First Name </b></label>
-        <input type="text" placeholder="Enter First Name" name="fname" required>
-  
-    <!--Last Name-->
-        <label for="lname"><b>Last Name</b></label>
-        <input type="text" placeholder="Enter Last Name" name="lname" required>
-  
-     <!--Username -->
-      <label for="uname"><b>New Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
-
-    <!--Password Line-->
-      <label for="psw"><b>New Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-
-
-      <!--Login button-->
-      <!--<button type="con"> <a href="upload.html">Continue</a></button>-->
-
-    </div>
-
-    <div>
-      <form method="post" action="">
-        {{form.hidden_tag()}}
-        {{form.username}}
-        {{form.password}}
-        {{form.submit}}
-    </div>
-
-</body>  
+	<div class="left">
+		<div class="title-wrapper">
+			<h1 class="title">Flashcards</h1>
+		</div>
+		<form class="input-boxes" method="post" action="">
+			{{form.hidden_tag()}}
+			<div class="input-rows signup-form-wrapper">
+				<label for="username">Username: </label>
+				{{form.username(class_="user signup-boxes")}}
+			</div>
+			<div class="input-rows signup-form-wrapper">
+				<label for="password">Password:</label>
+				{{form.password(class_="psw signup-boxes")}}
+			</div>
+			{{form.submit(class_="signup input-rows")}}
+		</form>
+	</div>
+</body>
