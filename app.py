@@ -439,25 +439,26 @@ def insert_card(side1, side2):
         side1["side_id"] = last_side_id + 1
         side2["side_id"] = last_side_id + 2
 
+        insert_side(side1)
+        insert_side(side2)
+
         cur.execute(
             "SELECT flashcard_id FROM flashcard ORDER BY flashcard_id DESC LIMIT 1"
         )
 
         cur.execute(
             "INSERT INTO flashcard(flashcard_id, front_id, back_id, correct_count, incorrect_count) VALUES(?, ?, ?, ?, ?)",
-            (int(cur.fetchone()[0]), last_side_id + 1, last_side_id + 2, 0, 0),
+            (int(cur.fetchone()[0]) + 1, last_side_id + 1, last_side_id + 2, 0, 0,),
         )
-
+        conn.commit()
     except Error as e:
         conn().rollback()
-        print(e)
+        print(repr(e))
 
     return 200
 
 
 def insert_side(side):
-    new_sides = {}
-
     try:
         conn = connection()
         cur = conn.cursor()
@@ -466,15 +467,13 @@ def insert_side(side):
 
         cur.execute(
             "INSERT INTO side(side_id, s_header, s_body, img_path) VALUES(?,?,?,?)",
-            (side["side_id"], side["s_header"], side["s_body"], side["img_path"]),
+            (side["side_id"], side["s_header"], side["s_body"], side["img_path"],),
         )
         conn.commit()
 
-        new_sides = get_sides(cur.lastrowid)
-
     except Error as e:
         conn().rollback()
-        print(e)
+        print(repr(e))
 
     return 200
 
@@ -828,8 +827,9 @@ def api_get_side(side_id):
 
 @app.route("/api/sides/add", methods=["GET", "POST"])
 def api_add_side():
-    side = request.get_json()
-    return jsonify(insert_side(side))
+    (side1, side2) = request.get_json()
+    print(side1, side2)
+    return jsonify(insert_card(side1, side2))
 
 
 @app.route("/api/sides/update", methods=["PUT"])
