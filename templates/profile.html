@@ -1,24 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+	<link rel="stylesheet" href="static/css/general.css" />
+	<link rel="stylesheet" href="static/css/profile.css" />
+	<script src="/static/js/script.js"></script>
 
-<link rel="stylesheet" href="">
-<script src="/static/js/script.js"></script>
+	<body>
+		<div class="left">
+			<div class="title-wrapper">
+				<h1 class="title">Flashcards</h1>
+			</div>
+			<div id="deck-container"></div>
+			<!-- <div>
+				<textarea id="categories">Here are the categories!</textarea>
+				<button id="btn-category" onclick="data_categories()">
+					Categories
+				</button>
+			</div>
 
-<body>
-  <div class="left">
-    <div class="title-wrapper">
-      <h1 class="title">Flashcards</h1>
-    </div>
-
-    <div>
-      <textarea id="categories">Here are the categories!</textarea>
-      <button id="btn-category" onclick="data_categories()">Categories</button>
-    </div>
-
-    <div>
-      <textarea id="decks">Here are the decks!</textarea>
-      <button id="btn-decks" onclick="data_decks()">Decks</button>
-    </div>
-
-</body>
+			<div>
+				<textarea id="decks">Here are the decks!</textarea>
+				<button id="btn-decks" onclick="data_decks()">Decks</button>
+			</div> -->
+		</div>
+		<div class="right">
+			<table id="category-container"></table>
+		</div>
+	</body>
 </html>

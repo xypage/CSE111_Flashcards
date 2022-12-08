@@ -1,0 +1,39 @@
+.category-wrapper {
+	background-color: #7e90f9;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	margin: 10px 0 10px 0;
+}
+
+.category-wrapper:hover {
+	background-color: #f9e47e;
+	border: 3px solid #7e90f9;
+}
+
+.category-wrapper:hover > .category {
+	padding: calc(0.5ch - 2px) calc(10ch / 2 - 3px) calc(0.5ch - 2px)
+		calc(10ch / 2 - 3px);
+}
+
+.category {
+	padding: 0.5ch calc(10ch / 2) 0.5ch calc(10ch / 2);
+}
+
+#deck-container {
+	width: 70vw;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.deck-wrapper {
+	width: calc(70vw / 3);
+	background-color: #dde9db;
+	padding: 1ch 3ch 3ch;
+}
+
+.deck-title {
+	text-align: center;
+}
