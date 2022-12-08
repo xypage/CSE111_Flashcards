@@ -98,6 +98,8 @@ def login():
                 logged_in_user_id = user.user_id
                 return redirect(url_for('profile'))
 
+    return render_template("login.html", form=form)
+
 
 @app.route("/logout", methods=["GET", "POST"])
 @login_required
@@ -539,18 +541,22 @@ def delete_side(side_id):
 
 
 def insert_category(cat):
-    new_cat = {}
+    new_cat = {
+        "category_id": int(cur.fetchone()) + 1, 
+        "c_name": cat
+    }
 
     try:
         conn = connection()
         cur = conn.cursor()
         cur.execute(
             "INSERT INTO categories(category_id, c_name) VALUES(?,?)",
-            (cat["category_id"], cat["c_name"]),
+            (new_cat["category_id"], new_cat["c_name"]),
         )
         conn.commit()
 
-        new_cat = get_category(cur.lastrowid)
+        cur.execute("SELECT category_id FROM categories ORDER BY category_id DESC LIMIT 1")
+
 
     except Error as e:
         conn().rollback()
@@ -559,14 +565,22 @@ def insert_category(cat):
     return insert_category
 
 
-def get_category():
+def get_category(user_id):
     cats = []
 
     try:
         conn = connection()
         conn.row_factory = sqlite3.Row
         cur = conn.cursor()
-        cur.execute("SELECT * FROM categories")
+        cur.execute("""SELECT DISTINCT categories.category_id, categories.c_name
+                        FROM (
+                            SELECT user_decks.deck_id
+                            FROM user_decks
+                            WHERE user_decks.user_id = ?
+                        ) AS d
+                        INNER JOIN card_in_deck ON d.deck_id = card_in_deck.deck_id
+                        INNER JOIN card_category ON card_in_deck.card_id = card_category.card_id
+                        INNER JOIN categories ON card_category.category_id = categories.category_id""", (user_id,))
         rows = cur.fetchall()
 
         for i in rows:
@@ -583,7 +597,7 @@ def get_category():
 
 @app.route("/api/cats", methods=["GET"])
 def api_get_cats():
-    return jsonify(get_category())
+    return jsonify(get_category(logged_in_user_id))
 
 
 # -------------Complex-------------#
