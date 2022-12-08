@@ -84,9 +84,11 @@ class LoginForm(FlaskForm):
 def home():
     return redirect(url_for("login"))
 
+
 logged_in_user_id = 1
 
-@app.route('/login', methods=['GET', 'POST'])
+
+@app.route("/login", methods=["GET", "POST"])
 def login():
     form = LoginForm()
 
@@ -96,7 +98,7 @@ def login():
             if bcrypt.check_password_hash(user.u_password, form.password.data):
                 login_user(user)
                 logged_in_user_id = user.user_id
-                return redirect(url_for('profile'))
+                return redirect(url_for("profile"))
 
     return render_template("login.html", form=form)
 
@@ -221,6 +223,7 @@ def insert_deck(deck):
 
     return insert_deck
 
+
 def get_decks(user_id):
     decks = []
 
@@ -230,11 +233,14 @@ def get_decks(user_id):
         cur = conn.cursor()
         print(type(user_id))
         print(user_id)
-        cur.execute("""SELECT deck.deck_id, d_name, d_description, icon_path
+        cur.execute(
+            """SELECT deck.deck_id, d_name, d_description, icon_path
                         FROM user_decks
                         INNER JOIN deck ON user_decks.deck_id = deck.deck_id
                         WHERE ? = user_decks.user_id
-                        AND user_decks.deck_id = deck.deck_id""", (user_id,))
+                        AND user_decks.deck_id = deck.deck_id""",
+            (user_id,),
+        )
         rows = cur.fetchall()
 
         for i in rows:
@@ -248,7 +254,7 @@ def get_decks(user_id):
     except Error as e:
         decks = []
         print(e)
-    
+
     return decks
 
 
@@ -423,12 +429,41 @@ def delete_deck(deck_id):
 # ------------------------------------------------------------------------#
 
 
+def insert_card(side1, side2):
+    try:
+        conn = connection()
+        cur = conn.cursor()
+
+        cur.execute("SELECT side_id FROM side ORDER BY side_id DESC LIMIT 1")
+        last_side_id = int(cur.fetchone()[0])
+        side1["side_id"] = last_side_id + 1
+        side2["side_id"] = last_side_id + 2
+
+        cur.execute(
+            "SELECT flashcard_id FROM flashcard ORDER BY flashcard_id DESC LIMIT 1"
+        )
+
+        cur.execute(
+            "INSERT INTO flashcard(flashcard_id, front_id, back_id, correct_count, incorrect_count) VALUES(?, ?, ?, ?, ?)",
+            (int(cur.fetchone()[0]), last_side_id + 1, last_side_id + 2, 0, 0),
+        )
+
+    except Error as e:
+        conn().rollback()
+        print(e)
+
+    return 200
+
+
 def insert_side(side):
     new_sides = {}
 
     try:
         conn = connection()
         cur = conn.cursor()
+
+        cur.execute("SELECT side_id FROM side ORDER BY side_id DESC LIMIT 1")
+
         cur.execute(
             "INSERT INTO side(side_id, s_header, s_body, img_path) VALUES(?,?,?,?)",
             (side["side_id"], side["s_header"], side["s_body"], side["img_path"]),
@@ -441,7 +476,7 @@ def insert_side(side):
         conn().rollback()
         print(e)
 
-    return insert_side
+    return 200
 
 
 def get_sides():
@@ -541,22 +576,21 @@ def delete_side(side_id):
 
 
 def insert_category(cat):
-    new_cat = {
-        "category_id": int(cur.fetchone()) + 1, 
-        "c_name": cat
-    }
 
     try:
         conn = connection()
         cur = conn.cursor()
+
+        cur.execute(
+            "SELECT category_id FROM categories ORDER BY category_id DESC LIMIT 1"
+        )
+        new_cat = {"category_id": int(cur.fetchone()) + 1, "c_name": cat}
+
         cur.execute(
             "INSERT INTO categories(category_id, c_name) VALUES(?,?)",
             (new_cat["category_id"], new_cat["c_name"]),
         )
         conn.commit()
-
-        cur.execute("SELECT category_id FROM categories ORDER BY category_id DESC LIMIT 1")
-
 
     except Error as e:
         conn().rollback()
@@ -572,7 +606,8 @@ def get_category(user_id):
         conn = connection()
         conn.row_factory = sqlite3.Row
         cur = conn.cursor()
-        cur.execute("""SELECT DISTINCT categories.category_id, categories.c_name
+        cur.execute(
+            """SELECT DISTINCT categories.category_id, categories.c_name
                         FROM (
                             SELECT user_decks.deck_id
                             FROM user_decks
@@ -580,7 +615,9 @@ def get_category(user_id):
                         ) AS d
                         INNER JOIN card_in_deck ON d.deck_id = card_in_deck.deck_id
                         INNER JOIN card_category ON card_in_deck.card_id = card_category.card_id
-                        INNER JOIN categories ON card_category.category_id = categories.category_id""", (user_id,))
+                        INNER JOIN categories ON card_category.category_id = categories.category_id""",
+            (user_id,),
+        )
         rows = cur.fetchall()
 
         for i in rows:
