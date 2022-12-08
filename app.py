@@ -651,6 +651,42 @@ def api_get_cats():
     return jsonify(get_category(logged_in_user_id))
 
 
+def user_history(user_id):
+    history = []
+
+    try:
+        conn = connection()
+        conn.row_factory = sqlite3.Row
+        cur = conn.cursor()
+        cur.execute(
+            """SELECT cur_date, correct_ratio
+            FROM u_session
+            WHERE sess_userid = ?
+            ORDER BY cur_date DESC""",
+            (user_id,),
+        )
+        rows = cur.fetchall()
+
+        for i in rows:
+            session = {}
+            session["cur_date"] = i["cur_date"]
+            session["correct_ratio"] = i["correct_ratio"]
+            history.append(session)
+
+    except Error as e:
+        history = []
+
+    return history
+
+@app.route("/api/history", methods=['GET'])
+def api_get_history():
+    return jsonify(user_history(logged_in_user_id))
+
+@app.route("/history", methods=['GET'])
+def history():
+    data = api_get_history()
+    return render_template("history.html", data=data)
+
 # -------------Complex-------------#
 def average_decks_per_user():
     message = {}
