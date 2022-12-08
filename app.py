@@ -541,29 +541,35 @@ def delete_side(side_id):
 
 
 def insert_category(cat):
-    new_cat = {
-        "category_id": int(cur.fetchone()) + 1, 
-        "c_name": cat
-    }
 
     try:
         conn = connection()
         cur = conn.cursor()
-        cur.execute(
-            "INSERT INTO categories(category_id, c_name) VALUES(?,?)",
-            (new_cat["category_id"], new_cat["c_name"]),
-        )
-        conn.commit()
 
         cur.execute("SELECT category_id FROM categories ORDER BY category_id DESC LIMIT 1")
+        new_cat = {
+            "category_id": int(cur.fetchone()[0]) + 1, 
+            "c_name": cat
+            }
+
+        cur.execute(
+            "INSERT INTO categories(category_id, c_name) VALUES(?,?)",
+            (new_cat["category_id"], new_cat["c_name"],),
+        )
+        conn.commit()
 
 
     except Error as e:
         conn().rollback()
         print(e)
 
-    return insert_category
+    return 200
 
+@app.route('/api/cats/add', methods=['GET', 'POST'])
+def api_add_cat():
+    cat = request.get_json()["c_name"]
+    print(cat)
+    return jsonify(insert_category(cat))
 
 def get_category(user_id):
     cats = []
