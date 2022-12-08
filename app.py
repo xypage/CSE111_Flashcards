@@ -38,7 +38,6 @@ login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = "login"
 
-
 @login_manager.user_loader
 def load_user(user_id):
     return User.query.get(int(user_id))
@@ -85,7 +84,23 @@ def home():
     return redirect(url_for("login"))
 
 
-logged_in_user_id = 1
+# A function to store the logged in user
+def logged_in_user_id(id=None):
+	# If an id is passed to it
+	if id:
+		print("Set ID")
+		# Store that
+		logged_in_user_id.id = id
+	else:
+		try:
+			# Otherwise, if there's a stored id, return that
+			temp = logged_in_user_id.id
+			print("Returning set ID")
+			return temp
+		except:
+			print("Returning default ID")
+			# Otherwise return 0, which doesn't map to any user since id's start at 1
+			return 0
 
 
 @app.route("/login", methods=["GET", "POST"])
@@ -97,7 +112,7 @@ def login():
         if user:
             if bcrypt.check_password_hash(user.u_password, form.password.data):
                 login_user(user)
-                logged_in_user_id = user.user_id
+                logged_in_user_id(user.user_id)
                 return redirect(url_for("profile"))
 
     return render_template("login.html", form=form)
@@ -130,6 +145,10 @@ def register():
 @app.route("/profile", methods=["GET", "POST"])
 def profile():
     return render_template("profile.html")
+
+@app.route("/new_deck", methods=["GET", "POST"])
+def new_deck():
+	return render_template("new_deck.html")
 
 
 def connection():
@@ -200,7 +219,7 @@ def createTable():
 
     except Error as e:
         _conn.rollback()
-        print(e)
+        print("createTable", e)
 
 
 def insert_deck(deck):
@@ -219,7 +238,7 @@ def insert_deck(deck):
 
     except Error as e:
         conn().rollback()
-        print(e)
+        print("insert_deck", e)
 
     return insert_deck
 
@@ -231,8 +250,8 @@ def get_decks(user_id):
         conn = connection()
         conn.row_factory = sqlite3.Row
         cur = conn.cursor()
-        print(type(user_id))
-        print(user_id)
+        # print(type(user_id))
+        # print(user_id)
         cur.execute(
             """SELECT deck.deck_id, d_name, d_description, icon_path
                         FROM user_decks
@@ -253,7 +272,7 @@ def get_decks(user_id):
 
     except Error as e:
         decks = []
-        print(e)
+        print("get_decks", e)
 
     return decks
 
@@ -302,7 +321,7 @@ def update_deck(deck):
     except Error as e:
         conn.rollback()
         updated_deck = {}
-        print(e)
+        print("get_decks_by_id", e)
 
     finally:
         conn.close
@@ -546,7 +565,7 @@ def update_side(side):
     except Error as e:
         conn.rollback()
         updated_side = {}
-        print(e)
+        print("update_side", e)
 
     finally:
         conn.close
@@ -601,7 +620,7 @@ def insert_category(cat):
 
     except Error as e:
         conn().rollback()
-        print(e)
+        print("insert_category", e)
 
     return 200
 
@@ -609,7 +628,7 @@ def insert_category(cat):
 @app.route("/api/cats/add", methods=["GET", "POST"])
 def api_add_cat():
     cat = request.get_json()["c_name"]
-    print(cat)
+    # print(cat)
     return jsonify(insert_category(cat))
 
 
@@ -643,12 +662,13 @@ def get_category(user_id):
     except Error as e:
         cats = []
 
+    print(cats)
     return cats
 
 
 @app.route("/api/cats", methods=["GET"])
 def api_get_cats():
-    return jsonify(get_category(logged_in_user_id))
+    return jsonify(get_category(logged_in_user_id()))
 
 
 # -------------Complex-------------#
@@ -766,7 +786,7 @@ def api_complex_cat(categories_list, deck_id):
 # -------------DECKS-------------#
 @app.route("/api/decks", methods=["GET"])
 def api_get_decks():
-    return jsonify(get_decks(logged_in_user_id))
+    return jsonify(get_decks(logged_in_user_id()))
 
 
 @app.route("/api/decks/<deck_id>", methods=["GET"])
@@ -828,7 +848,7 @@ def api_get_side(side_id):
 @app.route("/api/sides/add", methods=["GET", "POST"])
 def api_add_side():
     (side1, side2) = request.get_json()
-    print(side1, side2)
+    # print(side1, side2)
     return jsonify(insert_card(side1, side2))
 
 
