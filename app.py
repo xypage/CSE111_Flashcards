@@ -84,14 +84,9 @@ class LoginForm(FlaskForm):
 def home():
     return redirect(url_for("login"))
 
-<<<<<<< HEAD
 logged_in_user_id = 1
 
 @app.route('/login', methods=['GET', 'POST'])
-=======
-
-@app.route("/login", methods=["GET", "POST"])
->>>>>>> 799d9f12b8bd07c5aafd2d5b64b660908c584be0
 def login():
     form = LoginForm()
 
@@ -100,15 +95,8 @@ def login():
         if user:
             if bcrypt.check_password_hash(user.u_password, form.password.data):
                 login_user(user)
-<<<<<<< HEAD
                 logged_in_user_id = user.user_id
                 return redirect(url_for('profile'))
-=======
-                print("LOGGED IN")
-                return redirect(url_for("profile"))
-
-    return render_template("login.html", form=form)
->>>>>>> 799d9f12b8bd07c5aafd2d5b64b660908c584be0
 
 
 @app.route("/logout", methods=["GET", "POST"])
@@ -231,12 +219,7 @@ def insert_deck(deck):
 
     return insert_deck
 
-<<<<<<< HEAD
 def get_decks(user_id):
-=======
-
-def get_decks():
->>>>>>> 799d9f12b8bd07c5aafd2d5b64b660908c584be0
     decks = []
 
     try:
@@ -262,12 +245,8 @@ def get_decks():
 
     except Error as e:
         decks = []
-<<<<<<< HEAD
         print(e)
     
-=======
-
->>>>>>> 799d9f12b8bd07c5aafd2d5b64b660908c584be0
     return decks
 
 
