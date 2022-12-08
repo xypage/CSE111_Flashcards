@@ -581,12 +581,10 @@ def insert_category(cat):
         conn = connection()
         cur = conn.cursor()
 
-
-        cur.execute("SELECT category_id FROM categories ORDER BY category_id DESC LIMIT 1")
-        new_cat = {
-            "category_id": int(cur.fetchone()[0]) + 1, 
-            "c_name": cat
-            }
+        cur.execute(
+            "SELECT category_id FROM categories ORDER BY category_id DESC LIMIT 1"
+        )
+        new_cat = {"category_id": int(cur.fetchone()[0]) + 1, "c_name": cat}
 
         cur.execute(
             "SELECT category_id FROM categories ORDER BY category_id DESC LIMIT 1"
@@ -595,7 +593,10 @@ def insert_category(cat):
 
         cur.execute(
             "INSERT INTO categories(category_id, c_name) VALUES(?,?)",
-            (new_cat["category_id"], new_cat["c_name"],),
+            (
+                new_cat["category_id"],
+                new_cat["c_name"],
+            ),
         )
         conn.commit()
 
@@ -605,11 +606,13 @@ def insert_category(cat):
 
     return 200
 
-@app.route('/api/cats/add', methods=['GET', 'POST'])
+
+@app.route("/api/cats/add", methods=["GET", "POST"])
 def api_add_cat():
     cat = request.get_json()["c_name"]
     print(cat)
     return jsonify(insert_category(cat))
+
 
 def get_category(user_id):
     cats = []
