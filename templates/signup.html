@@ -1,26 +1,38 @@
 <!DOCTYPE html>
-
-<link rel="stylesheet" href="/static/css/general.css" />
-<link rel="stylesheet" href="/static/css/signup.css" />
-<!-- Button to open the modal login form -->
-
-<!-- The Modal -->
-<body>
-	<div class="left">
-		<div class="title-wrapper">
-			<h1 class="title">Flashcards</h1>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Flashcards Login</title>
+		<link rel="stylesheet" href="/static/css/general.css" />
+		<link rel="stylesheet" href="/static/css/signup.css" />
+		<link
+			rel="shortcut icon"
+			href="../static/favicon.ico"
+			type="image/x-icon"
+		/>
+	</head>
+	<body>
+		<div class="main-container">
+			<div class="title-wrapper">
+				<h1 class="title">Flashcards</h1>
+			</div>
+			<div class="form-wrapper">
+				<form class="input-boxes" method="post" action="">
+					{{form.hidden_tag()}}
+					<div class="input-rows signup-form-wrapper">
+						<label for="username">Username: </label>
+						{{form.username(class_="user signup-boxes")}}
+					</div>
+					<div class="input-rows signup-form-wrapper">
+						<label for="password">Password:</label>
+						{{form.password(class_="psw signup-boxes")}}
+					</div>
+					{{form.submit(class_="signup input-rows")}}
+				</form>
+			</div>
+			<div class="filler-10"></div>
 		</div>
-		<form class="input-boxes" method="post" action="">
-			{{form.hidden_tag()}}
-			<div class="input-rows signup-form-wrapper">
-				<label for="username">Username: </label>
-				{{form.username(class_="user signup-boxes")}}
-			</div>
-			<div class="input-rows signup-form-wrapper">
-				<label for="password">Password:</label>
-				{{form.password(class_="psw signup-boxes")}}
-			</div>
-			{{form.submit(class_="signup input-rows")}}
-		</form>
-	</div>
-</body>
+	</body>
+</html>

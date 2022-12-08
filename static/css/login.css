@@ -18,35 +18,4 @@
 	margin-top: 15px;
 }
 
-.new-user {
-	background-color: #d4d2b1;
-	border: none;
-	color: black;
-	padding: 20px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin-top: 50px;
-}
 
-.new-user:hover {
-	background-color: #a9a88d;
-}
-
-@media (orientation: portrait) {
-	.left {
-		width: 100vw;
-		margin-right: 0;
-	}
-
-	.login-boxes,
-	.input-boxes {
-		height: 3em;
-		width: 50ch;
-	}
-
-	.input-rows {
-		margin-top: 30px;
-	}
-}

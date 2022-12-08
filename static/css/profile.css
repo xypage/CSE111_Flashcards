@@ -1,3 +1,13 @@
+.main-container {
+	background-color: #b0d6aa;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
 .category-wrapper {
 	background-color: #7e90f9;
 	border-radius: 15px;
@@ -25,13 +35,15 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .deck-wrapper {
 	width: calc(70vw / 3);
 	background-color: #dde9db;
 	padding: 1ch 3ch 3ch;
+	margin-top: 20px;
 }
 
 .deck-title {

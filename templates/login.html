@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html>
-	<link rel="stylesheet" href="/static/css/general.css" />
-	<link rel="stylesheet" href="/static/css/login.css" />
-	<!-- Button to open the modal login form -->
-
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Flashcards Login</title>
+		<link rel="stylesheet" href="/static/css/general.css" />
+		<link rel="stylesheet" href="/static/css/login.css" />
+		<link
+			rel="shortcut icon"
+			href="../static/favicon.ico"
+			type="image/x-icon"
+		/>
+	</head>
 	<body>
-		<div class="left">
+		<div class="main-container">
 			<div class="title-wrapper">
 				<h1 class="title">Flashcards</h1>
 			</div>
@@ -37,7 +46,8 @@
 				</label>
 			</form>
 
-			<a class="new-user" href="{{url_for('register')}}">New User</a>
+			<a class="bottom-button new-user" href="{{url_for('register')}}">New User</a>
+
 		</div>
 	</body>
 </html>

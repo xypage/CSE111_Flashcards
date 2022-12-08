@@ -17,7 +17,7 @@ async function data_categories() {
 }
 
 async function show_categories(category_list) {
-	let category_container = document.querySelector("#category-container");
+	let category_table = document.querySelector("#category-table");
 	await category_list.forEach((category) => {
 		let tr = document.createElement("tr");
 		let td = document.createElement("td");

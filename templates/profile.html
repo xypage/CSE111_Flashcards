@@ -1,29 +1,30 @@
 <!DOCTYPE html>
-<html>
-	<link rel="stylesheet" href="static/css/general.css" />
-	<link rel="stylesheet" href="static/css/profile.css" />
-	<script src="/static/js/script.js"></script>
-
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Flashcards Login</title>
+		<link rel="stylesheet" href="/static/css/general.css" />
+		<link rel="stylesheet" href="/static/css/profile.css" />
+		<link
+			rel="shortcut icon"
+			href="../static/favicon.ico"
+			type="image/x-icon"
+		/>
+	</head>
 	<body>
-		<div class="left">
+		<div class="main-container">
 			<div class="title-wrapper">
-				<h1 class="title">Flashcards</h1>
+				<h1 class="title">Decks</h1>
 			</div>
 			<div id="deck-container"></div>
-			<!-- <div>
-				<textarea id="categories">Here are the categories!</textarea>
-				<button id="btn-category" onclick="data_categories()">
-					Categories
-				</button>
-			</div>
+			<a class="bottom-button new-deck" href="{{url_for('new_deck')}}">New User</a>
+		</div>
+		<div class="category-container">
+			<table id="category-table"></table>
+		</div>
 
-			<div>
-				<textarea id="decks">Here are the decks!</textarea>
-				<button id="btn-decks" onclick="data_decks()">Decks</button>
-			</div> -->
-		</div>
-		<div class="right">
-			<table id="category-container"></table>
-		</div>
 	</body>
+	<script src="/static/js/script.js"></script>
 </html>
