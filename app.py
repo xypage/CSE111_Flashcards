@@ -64,21 +64,18 @@ class LoginForm(FlaskForm):
 def home():
     return redirect(url_for('login'))
 
+logged_in_user_id = 1
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     form = LoginForm()
 
-    print("HERE")
-
     if form.validate_on_submit():
-        print("IN LOOP")
         user = User.query.filter_by(username=form.username.data).first()
         if user:
-            print("GOT USER")
             if bcrypt.check_password_hash(user.u_password, form.password.data):
-                print("CHECKED USER")
                 login_user(user)
-                print("LOGGED IN")
+                logged_in_user_id = user.user_id
                 return redirect(url_for('profile'))
 
     return render_template('login.html', form=form)
@@ -193,14 +190,20 @@ def insert_deck(deck):
     
     return insert_deck
 
-def get_decks():
+def get_decks(user_id):
     decks = []
 
     try:
         conn = connection()
         conn.row_factory = sqlite3.Row
         cur = conn.cursor()
-        cur.execute("SELECT * FROM deck")
+        print(type(user_id))
+        print(user_id)
+        cur.execute("""SELECT deck.deck_id, d_name, d_description, icon_path
+                        FROM user_decks
+                        INNER JOIN deck ON user_decks.deck_id = deck.deck_id
+                        WHERE ? = user_decks.user_id
+                        AND user_decks.deck_id = deck.deck_id""", (user_id,))
         rows = cur.fetchall()
 
         for i in rows:
@@ -213,6 +216,7 @@ def get_decks():
 
     except Error as e:
         decks = []
+        print(e)
     
     return decks
 
@@ -620,7 +624,7 @@ def api_complex_cat(categories_list, deck_id):
 #-------------DECKS-------------#
 @app.route('/api/decks', methods=['GET'])
 def api_get_decks():
-    return jsonify(get_decks())
+    return jsonify(get_decks(logged_in_user_id))
 
 @app.route('/api/decks/<deck_id>', methods=['GET'])
 def api_get_deck(deck_id):
