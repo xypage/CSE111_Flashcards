@@ -1,0 +1,21 @@
+.input-boxes {
+	display: flex;
+	flex-direction: column;
+	width: 30ch;
+}
+
+.input-rows {
+	display: flex;
+	flex-direction: column;
+	margin: 5px;
+}
+
+.login-boxes {
+	padding: 5px;
+	border-radius: 15px;
+}
+.login {
+	margin-top: 15px;
+}
+
+

@@ -9,17 +9,17 @@
 9	What is the search time in a Red-Black tree?		
 10	O(log N) 	Insertion, deletion, rearrangement and recoloring also take O(log N) time.	
 11	How many bits are used for the exponent in the IEEE 754 standard?	That being the (32 bit) single precision floating point format. 	
-12	There are 8 exponent bits.	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
+12	8	Note: the exponent is biased, so to get the actual exponent you subtract 127, making the max exponent 128 not 255.	
 13	What is 0b1100 in decimal?		
 14	12	1*2^3 + 1*2^2 + 0*2^1 + 0*2^0 = 8 + 4 = 12	
 15	What is the search time in a finger table used by Chord?		
 16	O(log N)	As opposed to the naïve approaches O(N), a finger table here only takes O(log N).	./chord_network.png
 17	What does CAP stand for in CAP theorem? 		
-18	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
+18	Consistency, Availability, and Partition		./cap_theorem.png
 19	When was C created, and by who?		
-20	C was first released in 1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
+20	1972, by Dennis Ritchie.	The most recent stable release was C17, in 2018.
 21	What is C in e=mc^2?		
-22	The speed of light.	More specifically, 299,792,458 m/s	
+22	The speed of light	More specifically, 299,792,458 m/s	
 23	What is C in e=mc^2?		
 24	Consistency, Availability, and Partition Tolerance		./cap_theorem.png
 25	What is C in e=mc^2?		

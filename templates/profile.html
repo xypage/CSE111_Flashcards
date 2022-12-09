@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Flashcards</title>
+		<link rel="stylesheet" href="/static/css/general.css" />
+		<link rel="stylesheet" href="/static/css/profile.css" />
+		<link
+			rel="shortcut icon"
+			href="../static/favicon.ico"
+			type="image/x-icon"
+		/>
+	</head>
+	<body>
+		<div class="link-bar">
+				<a class="link-bar-container" href="http://127.0.0.1:5000/login">Login</a>
+				<a class="link-bar-container" href="http://127.0.0.1:5000/profile">Decks</a>
+				<a class="link-bar-container" href="http://127.0.0.1:5000/history">History</a>
+		</div>
+		<div class="main-container">
+			<div class="title-wrapper">
+				<h1 class="title">Decks</h1>
+			</div>
+			<div id="deck-container"></div>
+			<a class="bottom-button new-deck" href="{{url_for('new_deck')}}">New Deck</a>
+		</div>
+		<div class="category-container">
+			<table id="category-table">
+				<tr>
+					<th><h2>Categories:</h2></th>
+				</tr>
+			</table>
+		</div>
+
+	</body>
+	<script src="/static/js/script.js"></script>
+</html>

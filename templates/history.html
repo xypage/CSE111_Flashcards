@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Flashcards</title>
+		<link rel="stylesheet" href="/static/css/general.css" />
+		<link rel="stylesheet" href="/static/css/profile.css" />
+		<link
+			rel="shortcut icon"
+			href="../static/favicon.ico"
+			type="image/x-icon"
+		/>
+	</head>
+	<body>
+		<div class="link-bar">
+				<a class="link-bar-container" href="http://127.0.0.1:5000/login">Login</a>
+				<a class="link-bar-container" href="http://127.0.0.1:5000/profile">Decks</a>
+				<a class="link-bar-container" href="http://127.0.0.1:5000/history">History</a>
+		</div>
+		<div class="main-container">
+			<div class="title-wrapper">
+				<h1 class="title">History</h1>
+			</div>
+
+            <div id="history-container">
+				<table id="history-table">
+					<tr class="header">
+						<th>Percent correct:</th>
+						<th>Session date:</th>
+						<div class="dropdown"></div>
+					</tr>
+				</table>
+			</div>
+
+			<div class="filler"></div>
+        </div>
+	</body>
+	<script src="/static/js/history.js"></script>
+</html>

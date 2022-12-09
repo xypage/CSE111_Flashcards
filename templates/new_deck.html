@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Flashcards</title>
+
+		<link rel="stylesheet" href="/static/css/general.css" />
+		<link rel="stylesheet" href="/static/css/new_deck.css" />
+		<link
+			rel="shortcut icon"
+			href="../static/favicon.ico"
+			type="image/x-icon"
+		/>
+	</head>
+	<body>
+		<div class="link-bar">
+				<a class="link-bar-container" href="http://127.0.0.1:5000/login">Login</a>
+				<a class="link-bar-container" href="http://127.0.0.1:5000/profile">Decks</a>
+				<a class="link-bar-container" href="http://127.0.0.1:5000/history">History</a>
+		</div>
+		<div class="main-container">
+			<div class="title-wrapper">
+				<h1 class="title">New Deck</h1>
+			</div>
+
+			<div class="form-wrapper">
+				<form action="/new_deck" method="post" class="input-boxes">
+					<div class="input-rows new-deck-form-wrapper">
+						<label for="deck-name">Deck name:</label>
+						<input type="text" name="deck-name" id="deck-name"></input>
+					</div>
+					<div class="input-rows new-deck-form-wrapper">
+						<label for="deck-description">Deck description:</label>
+						<input type="text" name="deck-description" id="deck-description"></input>
+					</div>
+					<div class="input-rows new-deck-form-wrapper">
+						<input type="submit"></submit>
+					</div>	
+				</form>
+			</div>
+			<div class="filler"></div>
+		</div>
+	</body>
+</html>
