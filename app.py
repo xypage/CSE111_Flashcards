@@ -38,6 +38,7 @@ login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = "login"
 
+
 @login_manager.user_loader
 def load_user(user_id):
     return User.query.get(int(user_id))
@@ -86,21 +87,22 @@ def home():
 
 # A function to store the logged in user
 def logged_in_user_id(id=None):
-	# If an id is passed to it
-	if id:
-		print("Set ID")
-		# Store that
-		logged_in_user_id.id = id
-	else:
-		try:
-			# Otherwise, if there's a stored id, return that
-			temp = logged_in_user_id.id
-			print("Returning set ID")
-			return temp
-		except:
-			print("Returning default ID")
-			# Otherwise return 0, which doesn't map to any user since id's start at 1
-			return 0
+    # If an id is passed to it
+    if id:
+        print("Set ID")
+        # Store that
+        logged_in_user_id.id = id
+    else:
+        try:
+            # Otherwise, if there's a stored id, return that
+            temp = logged_in_user_id.id
+            print("Returning set ID")
+            return temp
+        except:
+            print("Returning default ID")
+            # Otherwise return 0, which doesn't map to any user since id's start at 1
+            #TODO change it back to 0
+            return 10
 
 
 @app.route("/login", methods=["GET", "POST"])
@@ -146,9 +148,28 @@ def register():
 def profile():
     return render_template("profile.html")
 
+
+@app.route("/deck/<deck_id>", methods=["GET"])
+def deck_display(deck_id):
+    decks = get_decks(logged_in_user_id())
+    print([d["deck_id"] for d in decks])
+    if int(deck_id) in [d["deck_id"] for d in decks]:
+        return render_template("deck.html") 
+    # return "404 You don't have access to that deck"
+    return render_template("deck.html") 
+
 @app.route("/new_deck", methods=["GET", "POST"])
 def new_deck():
-	return render_template("new_deck.html")
+    print(request.method)
+    if request.method == "GET":
+        return render_template("new_deck.html")
+    else:
+        deck = {}
+        deck["d_name"] = request.form["deck-name"]
+        deck["d_description"] = request.form["deck-description"]
+        print(deck)
+        deck_id = insert_deck(deck)
+        return redirect(url_for("deck_display", deck_id=deck_id))
 
 
 def connection():
@@ -173,7 +194,6 @@ def createTable():
             deck_id             INTEGER NOT NULL PRIMARY KEY,
             d_name              VARCHAR(55) NOT NULL,
             d_description       VARCHAR(75) NOT NULL,
-            icon_path           VARCHAR(75));
         """
 
         sql2 = """CREATE TABLE IF NOT EXISTS user (
@@ -204,7 +224,6 @@ def createTable():
             side_id             INTEGER NOT NULL PRIMARY KEY,
             s_header            VARCHAR(30) NOT NULL,
             s_body              VARCHAR(100) NOT NULL,
-            img_path            VARCHAR(30));
         """
 
         _conn.execute(sql)
@@ -223,24 +242,27 @@ def createTable():
 
 
 def insert_deck(deck):
-    new_decks = {}
-
     try:
         conn = connection()
         cur = conn.cursor()
+
         cur.execute(
-            "INSERT INTO deck(deck_id, d_name, d_description, icon_path) VALUES(?,?,?,?)",
-            (deck["deck_id"], deck["d_name"], deck["d_description"], deck["icon_path"]),
+            "SELECT deck_id FROM deck ORDER BY deck_id DESC LIMIT 1"
         )
+        deck_id = int(cur.fetchone()[0]) + 1
+        cur.execute(
+            "INSERT INTO deck(deck_id, d_name, d_description) VALUES(?,?,?)",
+            (deck_id, deck["d_name"], deck["d_description"],),
+        )
+        cur.execute("INSERT INTO user_decks(user_id, deck_id) VALUES(?, ?)", (logged_in_user_id(), deck_id,))
         conn.commit()
 
-        new_decks = get_decks(cur.lastrowid)
-
+        return deck_id
     except Error as e:
         conn().rollback()
         print("insert_deck", e)
 
-    return insert_deck
+    # return insert_deck
 
 
 def get_decks(user_id):
@@ -253,7 +275,7 @@ def get_decks(user_id):
         # print(type(user_id))
         # print(user_id)
         cur.execute(
-            """SELECT deck.deck_id, d_name, d_description, icon_path
+            """SELECT deck.deck_id, d_name, d_description
                         FROM user_decks
                         INNER JOIN deck ON user_decks.deck_id = deck.deck_id
                         WHERE ? = user_decks.user_id
@@ -267,7 +289,6 @@ def get_decks(user_id):
             deck["deck_id"] = i["deck_id"]
             deck["d_name"] = i["d_name"]
             deck["d_description"] = i["d_description"]
-            deck["icon_path"] = i["icon_path"]
             decks.append(deck)
 
     except Error as e:
@@ -290,7 +311,6 @@ def get_decks_by_id(deck_id):
         deck["deck_id"] = row["deck_id"]
         deck["d_name"] = row["d_name"]
         deck["d_description"] = row["d_description"]
-        deck["icon_path"] = row["icon_path"]
 
     except Error as e:
         deck = {}
@@ -305,11 +325,10 @@ def update_deck(deck):
         conn = connection()
         cur = conn.cursor()
         cur.execute(
-            "UPDATE deck SET d_name = ?, d_description = ?, icon_path = ? WHERE deck_id = ?",
+            "UPDATE deck SET d_name = ?, d_description = ? WHERE deck_id = ?",
             (
                 deck["d_name"],
                 deck["d_description"],
-                deck["icon_path"],
             ),
         )
 
@@ -467,7 +486,13 @@ def insert_card(side1, side2):
 
         cur.execute(
             "INSERT INTO flashcard(flashcard_id, front_id, back_id, correct_count, incorrect_count) VALUES(?, ?, ?, ?, ?)",
-            (int(cur.fetchone()[0]) + 1, last_side_id + 1, last_side_id + 2, 0, 0,),
+            (
+                int(cur.fetchone()[0]) + 1,
+                last_side_id + 1,
+                last_side_id + 2,
+                0,
+                0,
+            ),
         )
         conn.commit()
     except Error as e:
@@ -485,8 +510,12 @@ def insert_side(side):
         cur.execute("SELECT side_id FROM side ORDER BY side_id DESC LIMIT 1")
 
         cur.execute(
-            "INSERT INTO side(side_id, s_header, s_body, img_path) VALUES(?,?,?,?)",
-            (side["side_id"], side["s_header"], side["s_body"], side["img_path"],),
+            "INSERT INTO side(side_id, s_header, s_body) VALUES(?,?,?)",
+            (
+                side["side_id"],
+                side["s_header"],
+                side["s_body"],
+            ),
         )
         conn.commit()
 
@@ -512,13 +541,43 @@ def get_sides():
             side["side_id"] = i["side_id"]
             side["s_header"] = i["s_header"]
             side["s_body"] = i["s_body"]
-            side["img_path"] = i["img_path"]
             sides.append(side)
 
     except Error as e:
         sides = []
 
     return sides
+
+    
+def get_cards(deck_id):
+    try:
+        conn = connection()
+        conn.row_factory = sqlite3.Row
+        cur = conn.cursor()
+        cards = []
+        cur.execute("""
+            SELECT f.correct_count AS correct, f.incorrect_count AS incorrect, 
+                    front.s_header AS front_header, front.s_body AS front_body,
+                    back.s_header AS back_header, back.s_body AS back_body
+            FROM (
+                SELECT card_in_deck.card_id FROM card_in_deck WHERE card_in_deck.deck_id = ?
+            ) AS cid
+                INNER JOIN flashcard AS f ON cid.card_id = f.flashcard_id
+                INNER JOIN side AS front ON f.back_id = front.side_id
+                INNER JOIN side AS back ON f.front_id = back.side_id
+        """, (deck_id,))
+        rows = cur.fetchall()
+        print(len(rows))
+        for i in rows:
+            card = {}
+            # print(i)
+            for key in i.keys():
+                card[key] = i[key]
+            cards.append(card)
+        return cards
+    except Error as e:
+        print("Error in get cards", e)
+        return None
 
 
 def get_sides_by_id(side_id):
@@ -534,7 +593,6 @@ def get_sides_by_id(side_id):
         side["side_id"] = row["side_id"]
         side["s_header"] = row["s_header"]
         side["s_body"] = row["s_body"]
-        side["img_path"] = row["img_path"]
 
     except Error as e:
         side = {}
@@ -549,11 +607,10 @@ def update_side(side):
         conn = connection()
         cur = conn.cursor()
         cur.execute(
-            "UPDATE side SET s_header = ?, s_body = ?, img_path = ? WHERE side_id = ?",
+            "UPDATE side SET s_header = ?, s_body = ?, WHERE side_id = ?",
             (
                 side["s_header"],
                 side["s_body"],
-                side["img_path"],
             ),
         )
 
@@ -641,14 +698,14 @@ def get_category(user_id):
         cur = conn.cursor()
         cur.execute(
             """SELECT DISTINCT categories.category_id, categories.c_name
-                        FROM (
-                            SELECT user_decks.deck_id
-                            FROM user_decks
-                            WHERE user_decks.user_id = ?
-                        ) AS d
-                        INNER JOIN card_in_deck ON d.deck_id = card_in_deck.deck_id
-                        INNER JOIN card_category ON card_in_deck.card_id = card_category.card_id
-                        INNER JOIN categories ON card_category.category_id = categories.category_id""",
+                FROM (
+                    SELECT user_decks.deck_id
+                    FROM user_decks
+                    WHERE user_decks.user_id = ?
+                ) AS d
+                INNER JOIN card_in_deck ON d.deck_id = card_in_deck.deck_id
+                INNER JOIN card_category ON card_in_deck.card_id = card_category.card_id
+                INNER JOIN categories ON card_category.category_id = categories.category_id""",
             (user_id,),
         )
         rows = cur.fetchall()
@@ -698,14 +755,16 @@ def user_history(user_id):
 
     return history
 
-@app.route("/api/history", methods=['GET'])
-def api_get_history():
-    return jsonify(user_history(logged_in_user_id))
 
-@app.route("/history", methods=['GET'])
+@app.route("/api/history", methods=["GET"])
+def api_get_history():
+    return jsonify(user_history(logged_in_user_id()))
+
+
+@app.route("/history", methods=["GET"])
 def history():
-    data = api_get_history()
-    return render_template("history.html", data=data)
+    return render_template("history.html")
+
 
 # -------------Complex-------------#
 def average_decks_per_user():
@@ -874,6 +933,10 @@ def api_delete_deck(deck_id):
 @app.route("/api/sides", methods=["GET"])
 def api_get_sides():
     return jsonify(get_sides())
+
+@app.route("/api/cards/<deck_id>", methods=["GET"])
+def api_get_cards(deck_id):
+    return jsonify(get_cards(deck_id))
 
 
 @app.route("/api/sides/<side_id>", methods=["GET"])

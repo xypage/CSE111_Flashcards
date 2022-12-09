@@ -29,7 +29,7 @@ async function show_categories(category_list) {
 
 		content.innerText = category["c_name"];
 
-		category_container.appendChild(td);
+		category_table.appendChild(td);
 	});
 }
 
