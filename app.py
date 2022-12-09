@@ -949,6 +949,14 @@ def search_query():
     print(keyword, deck_name, category_name)
     return jsonify(search_bar(keyword, deck_name, category_name))
 
+@app.route("/search", methods=['GET', 'POST'])
+def search():
+    if request.method == 'POST':
+        keyword = request.form.get("keyword")
+        deck_name = request.form.get("deckname")
+        category_name = request.form.get("categoryname0")
+        return jsonify(search_bar(keyword, deck_name, category_name))
+
 # -------------DECKS-------------#
 @app.route("/api/decks", methods=["GET"])
 def api_get_decks():
