@@ -878,6 +878,54 @@ def api_complex_cat(categories_list, deck_id):
     return jsonify(categories_to_deck(categories_list, deck_id))
 
 
+# Search Bar #
+def search_bar(keyword, deck, category):
+    results = []
+
+    try:
+        conn = connection()
+        cur = conn.cursor()
+        cur.execute("""SELECT front.s_header as front_header, front.s_body as front_body, back.s_header as back_header, back.s_body as back_body, deck.d_name as deck_search, categories.c_name as category_search
+                        FROM side as front, side as back, flashcard, deck, categories, card_category, card_in_deck
+                        WHERE front.side_id = flashcard.front_id
+                        AND back.side_id = flashcard.back_id
+                        AND flashcard.flashcard_id = card_category.card_id
+                        AND card_category.category_id = categories.category_id
+                        AND flashcard.flashcard_id = card_in_deck.card_id
+                        AND card_in_deck.deck_id = deck.deck_id
+                        AND (front.s_header LIKE ? OR front.s_body LIKE ?
+                        OR back.s_header LIKE ? OR back.s_body LIKE ?)
+                        AND d_name = ?
+                        AND c_name = ?""", ('%' + keyword + '%', '%' + keyword + '%', '%' + keyword + '%', '%' + keyword + '%', deck, category,),
+                    )
+        
+        rows = cur.fetchall()
+        print(rows)
+
+        for i in rows:
+            result = {}
+            result['front_header'] = i[2]
+            result['front_body'] = i[3]
+            result['back_header'] = i[0]
+            result['back_body'] = i[1]
+            result['deck_search'] = i[4]
+            result['category_search'] = i[5]
+            results.append(result)
+
+    except Error as e:
+        results = []
+        print(e)
+
+    return results
+
+@ app.route("/api/search", methods=['GET', 'POST'])
+def search_query():
+    keyword = request.args.get("keyword")
+    deck_name = request.args.get("deckname")
+    category_name = request.args.get("categoryname0")
+    print(keyword, deck_name, category_name)
+    return jsonify(search_bar(keyword, deck_name, category_name))
+
 # -------------DECKS-------------#
 @app.route("/api/decks", methods=["GET"])
 def api_get_decks():
