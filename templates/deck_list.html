@@ -19,7 +19,25 @@
 				<a class="link-bar-container" href="http://127.0.0.1:5000/profile">Decks</a>
 				<a class="link-bar-container" href="http://127.0.0.1:5000/history">History</a>
 		</div>
-		TEMPLATE
+		<div class="form-wrapper">
+            <form action="/search" method="get" class="input-boxes">
+                <div class="input-rows new-deck-form-wrapper">
+                    <label for="keyword">Keyword:</label>
+                    <input type="text" name="keyword" id="keyword"></input>
+                </div>
+                <div class="input-rows new-deck-form-wrapper">
+                    <label for="deckname">Deck:</label>
+                    <input type="text" name="deckname" id="deckname"></input>
+                </div>
+                <div class="input-rows new-deck-form-wrapper">
+                    <label for="categoryname0">Category:</label>
+                    <input type="text" name="categoryname0" id="categoryname0"></input>
+                </div>
+                <div class="input-rows new-deck-form-wrapper">
+                    <input type="submit"></submit>
+                </div>	
+            </form>
+        </div>
 	</body>
 	<!-- <script src="/static/js/script.js"></script> -->
 </html>
