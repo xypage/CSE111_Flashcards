@@ -156,7 +156,7 @@ def deck_display(deck_id):
     print([d["deck_id"] for d in decks])
     if int(deck_id) in [d["deck_id"] for d in decks]:
         return render_template("deck.html") 
-    return '<a href="http://localhost/profile">404 You don\'t have access to that deck</a>'
+    return '<a href="http://127.0.0.1:5000">404 You don\'t have access to that deck</a>'
     # return render_template("deck.html") 
 
 @app.route("/new_deck", methods=["GET", "POST"])

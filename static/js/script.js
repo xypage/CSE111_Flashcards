@@ -18,18 +18,24 @@ async function data_categories() {
 
 async function show_categories(category_list) {
 	let category_table = document.querySelector("#category-table");
+	let cat_list = [];
 	await category_list.forEach((category) => {
-		let tr = document.createElement("tr");
-		let td = document.createElement("td");
-		tr.appendChild(td);
-		td.classList.add("category-wrapper");
-		let content = document.createElement("div");
-		content.classList.add("category");
-		td.appendChild(content);
+		if (cat_list.includes(category["c_name"])) {
+			// nop
+		} else {
+			cat_list.push(category["c_name"]);
+			let tr = document.createElement("tr");
+			let td = document.createElement("td");
+			tr.appendChild(td);
+			td.classList.add("category-wrapper");
+			let content = document.createElement("div");
+			content.classList.add("category");
+			td.appendChild(content);
 
-		content.innerText = category["c_name"];
+			content.innerText = category["c_name"];
 
-		category_table.appendChild(td);
+			category_table.appendChild(td);
+		}
 	});
 }
 
@@ -47,8 +53,8 @@ async function show_decks(deck_list) {
 	let deck_container = document.querySelector("#deck-container");
 	await deck_list.forEach((deck) => {
 		let link = document.createElement("a");
-		link.classList.add("deck-link")
-		link.setAttribute("href", `http://127.0.0.1:5000/deck/${deck["deck_id"]}`)
+		link.classList.add("deck-link");
+		link.setAttribute("href", `http://127.0.0.1:5000/deck/${deck["deck_id"]}`);
 		let wrapper = document.createElement("div");
 		wrapper.classList.add("deck-wrapper");
 		link.appendChild(wrapper);
