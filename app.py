@@ -102,7 +102,8 @@ def logged_in_user_id(id=None):
             print("Returning default ID")
             # Otherwise return 0, which doesn't map to any user since id's start at 1
             #TODO change it back to 0
-            return 10
+            # return 10
+            return 0
 
 
 @app.route("/login", methods=["GET", "POST"])
@@ -155,8 +156,8 @@ def deck_display(deck_id):
     print([d["deck_id"] for d in decks])
     if int(deck_id) in [d["deck_id"] for d in decks]:
         return render_template("deck.html") 
-    # return "404 You don't have access to that deck"
-    return render_template("deck.html") 
+    return '<a href="http://localhost/profile">404 You don\'t have access to that deck</a>'
+    # return render_template("deck.html") 
 
 @app.route("/new_deck", methods=["GET", "POST"])
 def new_deck():
@@ -710,7 +711,6 @@ def api_add_cat():
     cat = request.get_json()["c_name"]
     # print(cat)
     return jsonify(insert_category(cat))
-
 
 def get_category(user_id):
     cats = []
