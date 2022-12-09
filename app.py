@@ -956,6 +956,7 @@ def search():
         deck_name = request.form.get("deckname")
         category_name = request.form.get("categoryname0")
         return jsonify(search_bar(keyword, deck_name, category_name))
+    return render_template("deck_list.html")
 
 # -------------DECKS-------------#
 @app.route("/api/decks", methods=["GET"])
