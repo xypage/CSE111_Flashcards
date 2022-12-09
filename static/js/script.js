@@ -46,8 +46,12 @@ async function data_decks() {
 async function show_decks(deck_list) {
 	let deck_container = document.querySelector("#deck-container");
 	await deck_list.forEach((deck) => {
+		let link = document.createElement("a");
+		link.classList.add("deck-link")
+		link.setAttribute("href", `http://127.0.0.1:5000/deck/${deck["deck_id"]}`)
 		let wrapper = document.createElement("div");
 		wrapper.classList.add("deck-wrapper");
+		link.appendChild(wrapper);
 
 		let title = document.createElement("h3");
 		title.classList.add("deck-title");
@@ -59,6 +63,6 @@ async function show_decks(deck_list) {
 
 		wrapper.appendChild(title);
 		wrapper.appendChild(description);
-		deck_container.appendChild(wrapper);
+		deck_container.appendChild(link);
 	});
 }

@@ -171,6 +171,26 @@ def new_deck():
         deck_id = insert_deck(deck)
         return redirect(url_for("deck_display", deck_id=deck_id))
 
+        
+@app.route("/new_card/<deck_id>", methods=["GET", "POST"])
+def new_card(deck_id):
+    print(request.method)
+    if request.method == "GET":
+        return render_template("new_card.html", deck_id=deck_id)
+    else:
+        print("POSTING NEW CARD")
+        # side["s_header"],
+        #         side["s_body"],
+        side1 = {}
+        side1["s_header"] = request.form["card-back-title"]
+        side1["s_body"] = request.form["card-back-text"]
+        side2 = {}
+        side2["s_header"] = request.form["card-front-title"]
+        side2["s_body"] = request.form["card-front-text"]
+        # print(card)
+        card_id = insert_card(side1, side2, deck_id)
+        return redirect(url_for("deck_display", deck_id=deck_id))
+
 
 def connection():
     conn = sqlite3.connect(r"card.db")
@@ -467,7 +487,7 @@ def delete_deck(deck_id):
 # ------------------------------------------------------------------------#
 
 
-def insert_card(side1, side2):
+def insert_card(side1, side2, deck_id):
     try:
         conn = connection()
         cur = conn.cursor()
@@ -484,16 +504,19 @@ def insert_card(side1, side2):
             "SELECT flashcard_id FROM flashcard ORDER BY flashcard_id DESC LIMIT 1"
         )
 
+        card_id = int(cur.fetchone()[0]) + 1
         cur.execute(
             "INSERT INTO flashcard(flashcard_id, front_id, back_id, correct_count, incorrect_count) VALUES(?, ?, ?, ?, ?)",
             (
-                int(cur.fetchone()[0]) + 1,
+                card_id,
                 last_side_id + 1,
                 last_side_id + 2,
                 0,
                 0,
             ),
         )
+
+        cur.execute("INSERT INTO card_in_deck(deck_id, card_id) VALUES(?, ?)", (deck_id, card_id))
         conn.commit()
     except Error as e:
         conn().rollback()

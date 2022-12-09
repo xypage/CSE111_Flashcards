@@ -13,6 +13,8 @@ window.addEventListener("load", () => {
 
 		get_cards(deck_id);
 	};
+
+	document.querySelector(".bottom-button.new-card").setAttribute('href', `http://127.0.0.1:5000/new_card/${deck_id}`);
 });
 
 function show_deck(deck) {

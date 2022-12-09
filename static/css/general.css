@@ -19,7 +19,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: calc(100% / 3);
+	width: calc(100% / 2);
 	color: #00F;
 	text-decoration: none
 }
